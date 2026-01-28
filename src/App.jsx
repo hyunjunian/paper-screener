@@ -21,7 +21,7 @@ function App() {
   }, [loweredQ]);
 
   useEffect(() => {
-    fetch("/iclr2026.csv")
+    fetch(`${import.meta.env.BASE_URL}iclr2026.csv`)
       .then(res => res.text())
       .then(text => setPapers(text.trim().split("\n").slice(1).map(line => {
         const [id, title, abstract, ratingSum, ratingCount] = line.split(",");
