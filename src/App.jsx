@@ -44,7 +44,7 @@ function App() {
         </ol>
         <p className="mt-8 text-neutral-500 p-4 border-t border-neutral-200">If you have any feedback, please contact me at <a className="text-red-700 hover:underline" href="https://github.com/hyunjunian/paper-screener" target="_blank">GitHub</a>.</p>
       </aside>
-      <div>
+      <div className="flex-1">
         <header className="z-10 sticky top-0 bg-neutral-100 border-b border-neutral-200">
           <input className="w-full p-2 bg-white focus:outline-hidden border-b border-neutral-200" type="text" placeholder="Search..." value={q} onChange={e => setQ(e.target.value)} />
           <li className="flex divide-x divide-neutral-200 font-medium text-sm">
