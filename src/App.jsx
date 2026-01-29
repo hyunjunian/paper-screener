@@ -57,8 +57,8 @@ function App() {
     Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`)
       .then(res => res.text())
       .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
-        const [id, title, abstract, ratingSum, ratingCount] = line.split(",");
-        return { id, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
+        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount] = line.split(",");
+        return { id, openReview, arxiv, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
       })].sort((a, b) => b.rating - a.rating)))));
 
     const observer = new IntersectionObserver(
@@ -117,9 +117,6 @@ function App() {
           <header className="z-10 sticky top-0">
             <input className="w-full p-4 hover:bg-white bg-neutral-50 focus:outline-hidden border-b border-neutral-200" type="text" placeholder="Search..." value={q} onChange={e => setQ(e.target.value)} />
             <li className="flex divide-x divide-neutral-200 font-medium text-sm bg-neutral-100 border-b border-neutral-200">
-              {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 p-2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-          </svg> */}
               <span className="w-16 px-2 py-1 text-right">#</span>
               <span className="w-16 px-2 py-1">Rating</span>
               <span className="w-24 px-2 py-1">Conference</span>
@@ -129,18 +126,15 @@ function App() {
           </header>
           <main className="min-h-screen">
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
-              {filteredPapers.slice(0, count).map(({ id, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
-                {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 p-2 text-neutral-400">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-            </svg> */}
+              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id || openReview || title}>
                 <span className="w-16 p-2 text-right">{index + 1}</span>
                 <span className="w-16 p-2">{rating.toFixed(2)}</span>
                 <span className="w-24 p-2">{conference}</span>
                 <span className="w-64 p-2">
                   <p><HighlightedContent text={title} query={loweredQ} /></p>
                   <p>
-                    <a className="text-amber-700 hover:underline" href={`https://openreview.net/forum?id=${id}`} target="_blank">[OpenReview]</a>
-                    {/* <a className="text-amber-700 hover:underline" href={`https://arxiv.org/abs/${id}`} target="_blank">[arxiv]</a> */}
+                    {openReview && <a className="text-amber-700 hover:underline" href={`https://openreview.net/forum?id=${openReview}`} target="_blank">[OpenReview]</a>}
+                    {arxiv && <a className="text-amber-700 hover:underline" href={`https://arxiv.org/abs/${arxiv}`} target="_blank">[arxiv]</a>}
                   </p>
                 </span>
                 <span className="flex-1 p-2"><HighlightedContent text={abstract} query={loweredQ} /></span>
