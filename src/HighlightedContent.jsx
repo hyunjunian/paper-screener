@@ -1,14 +1,18 @@
 import { MathJax } from "better-react-mathjax";
+import { useState } from "react";
 
 
-function HighlightedContent({ text, query, isMathJax = false }) {
-    if (!isMathJax) {
-        if (!query.trim()) return text;
+function HighlightedContent({ text, query }) {
+    const [renderMath, setRenderMath] = useState(false);
+
+    if (!renderMath) {
+        if (!query.trim()) return <>
+            <span>{text}</span> {(text.includes("$") || text.includes("\\")) && <button className="text-amber-700 hover:underline" onClick={() => setRenderMath(true)}>[Render Math]</button>}
+        </>;
 
         const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const parts = text.split(new RegExp(`(${escapedQuery})`, 'gi'));
 
-        // todo: when search with \, some text breaks. need to fix.
         return (
             <>
                 {parts.map((part, index) =>
@@ -20,16 +24,18 @@ function HighlightedContent({ text, query, isMathJax = false }) {
                         <span key={index}>{part}</span>
                     )
                 )}
+                {(text.includes("$") || text.includes("\\")) && <button className="text-amber-700 hover:underline" onClick={() => setRenderMath(true)}>[Render Math]</button>}
             </>
         );
     }
 
     if (!query.trim()) return <MathJax>{text}</MathJax>;
+
     const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const parts = text.split(new RegExp(`(${escapedQuery})`, 'gi'));
 
     return (
-        <>
+        <MathJax>
             {parts.map((part, index) =>
                 part.toLowerCase() === query ? (
                     <mark key={index} className="bg-amber-300">
@@ -39,7 +45,7 @@ function HighlightedContent({ text, query, isMathJax = false }) {
                     <span key={index}>{part}</span>
                 )
             )}
-        </>
+        </MathJax>
     );
 };
 
