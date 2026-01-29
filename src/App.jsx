@@ -80,7 +80,10 @@ function App() {
         <aside className="w-64 flex flex-col shrink-0 h-screen sticky top-0 bg-neutral-50 border-r border-neutral-200 text-sm divide-y divide-neutral-200">
           <div className="flex items-center border-neutral-200 px-4 py-3 space-x-4 shrink-0">
             <img className="size-6 grayscale" src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt="Paper Screener Logo" />
-            <h1 className="text-2xl font-serif">Paper Screener</h1>
+            <h1 className="text-2xl font-serif"><Button onClick={() => {
+              setQ("");
+              setConferences(new Set());
+            }}>Paper Screener</Button></h1>
           </div>
           <div className="flex-1 px-4 py-3 space-y-3 overflow-y-auto overscroll-contain">
             <h2 className="font-semibold">Conferences</h2>
