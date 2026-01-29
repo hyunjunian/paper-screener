@@ -12,11 +12,13 @@ const config = {
   },
 };
 const PAGE_SIZE = 100;
+const CONFERENCES = new Set(["iclr2026", "nips2025", "iclr2025"]);
 
 function App() {
   const bottomRef = useRef(null);
   const [papers, setPapers] = useState([]);
   const [count, setCount] = useState(PAGE_SIZE);
+  const [conferences, setConferences] = useState(new Set());
   const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get("q") || "");
 
   const loweredQ = useMemo(() => q.toLowerCase(), [q]);
@@ -44,12 +46,12 @@ function App() {
   }, [q]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}iclr2026.csv`)
+    Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}${conference}.csv`)
       .then(res => res.text())
-      .then(text => setPapers(text.trim().split("\n").slice(1).map((line) => {
+      .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
         const [id, title, abstract, ratingSum, ratingCount] = line.split(",");
-        return { id, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
-      }).sort((a, b) => b.rating - a.rating)));
+        return { id, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
+      })].sort((a, b) => b.rating - a.rating)))));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -75,12 +77,19 @@ function App() {
           <div className="flex-1 px-4 py-3 space-y-3 overflow-y-auto">
             <h2 className="font-semibold">Conferences</h2>
             <ul className="space-y-1">
-              {["ICLR 2026", "ICLR 2025", "ICLR 2024"].map((conference) => (
+              {Array.from(CONFERENCES).map((conference) => (
                 <li key={conference}>
                   <label className="flex items-center space-x-2 cursor-pointer hover:underline">
-                    <input type="checkbox" className="accent-amber-700" />
-                    <p className="">{conference}</p>
-                    <p className="text-neutral-500">({papers.length})</p>
+                    <input type="checkbox" className="accent-amber-700" checked={conferences.has(conference)} onChange={() => {
+                      setConferences((prev) => {
+                        const newSet = new Set(prev);
+                        if (newSet.has(conference)) newSet.delete(conference);
+                        else newSet.add(conference);
+                        return newSet;
+                      });
+                    }} />
+                    <p>{conference}</p>
+                    <p className="text-neutral-500">({papers.filter(paper => paper.conference === conference).length})</p>
                   </label>
                 </li>
               ))}
@@ -112,13 +121,13 @@ function App() {
           </header>
           <main className="min-h-screen">
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
-              {filteredPapers.slice(0, count).map(({ id, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
+              {filteredPapers.slice(0, count).map(({ id, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
                 {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 p-2 text-neutral-400">
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
             </svg> */}
                 <span className="w-16 p-2 text-right">{index + 1}</span>
                 <span className="w-16 p-2">{rating.toFixed(2)}</span>
-                <span className="w-24 p-2">ICLR</span>
+                <span className="w-24 p-2">{conference}</span>
                 <span className="w-64 p-2">
                   <p><HighlightedContent text={title} query={loweredQ} /></p>
                   <p>

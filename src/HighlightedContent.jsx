@@ -7,7 +7,7 @@ function HighlightedContent({ text, query }) {
 
     if (!renderMath) {
         if (!query.trim()) return <>
-            <span>{text}</span> {(text.includes("$") || text.includes("\\")) && <button className="text-amber-700 hover:underline" onClick={() => setRenderMath(true)}>[Render Math]</button>}
+            <span>{text}</span> {text.includes("$") && <button className="text-amber-700 hover:underline" onClick={() => setRenderMath(true)}>[Render Math]</button>}
         </>;
 
         const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -24,7 +24,7 @@ function HighlightedContent({ text, query }) {
                         <span key={index}>{part}</span>
                     )
                 )}
-                {(text.includes("$") || text.includes("\\")) && <button className="text-amber-700 hover:underline" onClick={() => setRenderMath(true)}>[Render Math]</button>}
+                {text.includes("$") && <button className="text-amber-700 hover:underline" onClick={() => setRenderMath(true)}>[Render Math]</button>}
             </>
         );
     }
