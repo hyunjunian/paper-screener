@@ -132,7 +132,7 @@ function App() {
                 <span className="w-24 p-2">{conference}</span>
                 <span className="w-64 p-2">
                   <p><HighlightedContent text={title} query={loweredQ} /></p>
-                  <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title)} target="_blank">[paper]</a></p>
+                  <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title)} target="_blank">[Paper]</a></p>
                 </span>
                 <span className="flex-1 p-2"><HighlightedContent text={abstract} query={loweredQ} /></span>
               </li>)}
