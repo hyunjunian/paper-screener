@@ -18,32 +18,35 @@ function App() {
   const bottomRef = useRef(null);
   const [papers, setPapers] = useState([]);
   const [count, setCount] = useState(PAGE_SIZE);
-  const [conferences, setConferences] = useState(new Set());
+  const [conferences, setConferences] = useState(() => new Set(new URLSearchParams(window.location.search).get("conferences")?.split(",") || []));
   const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get("q") || "");
 
   const loweredQ = useMemo(() => q.toLowerCase(), [q]);
   const filteredPapers = useMemo(() => {
-    if (!loweredQ) return papers;
-    return papers.filter(({ title, abstract }) =>
-      title.toLowerCase().includes(loweredQ) ||
-      abstract.toLowerCase().includes(loweredQ)
+    if (!loweredQ && conferences.size === 0) return papers;
+    return papers.filter(({ conference, title, abstract }) =>
+      (conferences.size === 0 || conferences.has(conference)) &&
+      (title.toLowerCase().includes(loweredQ) ||
+      abstract.toLowerCase().includes(loweredQ))
     );
-  }, [papers, loweredQ]);
+  }, [papers, loweredQ, conferences]);
 
   useEffect(() => {
     setCount(PAGE_SIZE);
-  }, [loweredQ]);
+  }, [loweredQ, conferences]);
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     if (q) params.set("q", q);
     else params.delete("q");
+    if (conferences.size > 0) params.set("conferences", Array.from(conferences).join(","));
+    else params.delete("conferences");
     if (params.size === 0) {
       window.history.replaceState({}, "", location.pathname);
       return;
     }
     window.history.replaceState({}, "", `${location.pathname}?${params.toString()}`);
-  }, [q]);
+  }, [q, conferences]);
 
   useEffect(() => {
     Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}${conference}.csv`)
