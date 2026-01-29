@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { MathJaxContext } from "better-react-mathjax";
 
 import HighlightedContent from "./HighlightedContent";
+import { getConferenceLabel } from "./utils";
 
 
 const config = {
@@ -12,7 +13,7 @@ const config = {
   },
 };
 const PAGE_SIZE = 100;
-const CONFERENCES = new Set(["iclr2026", "nips2025", "iclr2025"]);
+const CONFERENCES = new Set(["cvpr2021", "iclr2017", "nips2020", "nips2000", "iclr2021", "nips2016", "nips1991", "nips1987", "cvpr2017", "cvpr2016", "nips1990", "nips2017", "nips2001", "iclr2020", "nips2021", "cvpr2020", "nips2006", "nips2010", "nips1997", "icml2016", "icml2020", "icml2021", "icml2017", "nips1996", "nips2011", "iclr2026", "nips2007", "cvpr2013", "icml2014", "nips1995", "nips2012", "nips2004", "iclr2025", "nips2024", "nips1999", "icml2018", "iclr2013", "cvpr2025", "nips2008", "icml2022", "icml2023", "nips2009", "cvpr2024", "icml2019", "nips1998", "nips2025", "nips2005", "iclr2024", "nips2013", "nips1994", "icml2015", "nips2022", "nips1989", "cvpr2019", "cvpr2023", "nips2018", "icml2024", "cvpr2015", "nips1993", "iclr2019", "nips2014", "iclr2023", "nips2002", "iclr2022", "nips2003", "nips2015", "iclr2018", "nips1992", "icml2013", "cvpr2014", "icml2025", "nips2019", "cvpr2022", "iclr2014", "cvpr2018", "nips1988", "nips2023"]);
 
 function App() {
   const bottomRef = useRef(null);
@@ -53,7 +54,7 @@ function App() {
   }, [q, conferences]);
 
   useEffect(() => {
-    Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}${conference}.csv`)
+    Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`)
       .then(res => res.text())
       .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
         const [id, title, abstract, ratingSum, ratingCount] = line.split(",");
@@ -81,7 +82,7 @@ function App() {
             <img className="size-6 grayscale" src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt="Paper Screener Logo" />
             <h1 className="text-2xl font-serif">Paper Screener</h1>
           </div>
-          <div className="flex-1 px-4 py-3 space-y-3 overflow-y-auto">
+          <div className="flex-1 px-4 py-3 space-y-3 overflow-y-auto overscroll-contain">
             <h2 className="font-semibold">Conferences</h2>
             <ul className="space-y-1">
               {Array.from(CONFERENCES).map((conference) => (
@@ -95,7 +96,7 @@ function App() {
                         return newSet;
                       });
                     }} />
-                    <p>{conference}</p>
+                    <p>{getConferenceLabel(conference)}</p>
                     <p className="text-neutral-500">({searchedPapers.filter(paper => paper.conference === conference).length.toLocaleString()})</p>
                   </label>
                 </li>
@@ -105,9 +106,9 @@ function App() {
           <div className="px-4 py-3 space-y-3 shrink-0">
             <h2 className="font-semibold">Instructions</h2>
             <ol className="list-decimal list-inside space-y-1">
-              <li>Use the search bar to filter papers by title or abstract.</li>
-              <li>Click on the OpenReview link to read the full paper and reviews.</li>
-              <li>Load more papers using the "Load 20 more" button at the bottom.</li>
+              <li>Use the search bar to filter papers by title and abstract.</li>
+              <li>Use the checkboxes to filter papers by conference.</li>
+              <li>Scroll down to load more papers.</li>
             </ol>
           </div>
           <p className="text-neutral-500 px-4 py-3 shrink-0">If you have any feedback, please contact me at <a className="text-amber-700 hover:underline" href="https://github.com/hyunjunian/paper-screener" target="_blank">[GitHub]</a>.</p>
