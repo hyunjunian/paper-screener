@@ -22,14 +22,18 @@ function App() {
   const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get("q") || "");
 
   const loweredQ = useMemo(() => q.toLowerCase(), [q]);
-  const filteredPapers = useMemo(() => {
-    if (!loweredQ && conferences.size === 0) return papers;
-    return papers.filter(({ conference, title, abstract }) =>
-      (conferences.size === 0 || conferences.has(conference)) &&
-      (title.toLowerCase().includes(loweredQ) ||
-      abstract.toLowerCase().includes(loweredQ))
+  const searchedPapers = useMemo(() => {
+    if (!loweredQ) return papers;
+    return papers.filter(({ title, abstract }) =>
+      title.toLowerCase().includes(loweredQ) ||
+      abstract.toLowerCase().includes(loweredQ)
     );
-  }, [papers, loweredQ, conferences]);
+  }, [papers, loweredQ]);
+  const filteredPapers = useMemo(() => {
+    if (conferences.size === 0) return searchedPapers;
+    return searchedPapers.filter(({ conference }) => (conferences.size === 0 || conferences.has(conference))
+    );
+  }, [searchedPapers, conferences]);
 
   useEffect(() => {
     setCount(PAGE_SIZE);
@@ -92,7 +96,7 @@ function App() {
                       });
                     }} />
                     <p>{conference}</p>
-                    <p className="text-neutral-500">({papers.filter(paper => paper.conference === conference).length})</p>
+                    <p className="text-neutral-500">({searchedPapers.filter(paper => paper.conference === conference).length.toLocaleString()})</p>
                   </label>
                 </li>
               ))}
