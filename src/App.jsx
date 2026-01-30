@@ -121,7 +121,7 @@ function App() {
             <input className="w-full p-4 hover:bg-white bg-neutral-50 focus:outline-hidden border-b border-neutral-200" type="text" placeholder="Search..." value={q} onChange={e => setQ(e.target.value)} />
             <li className="flex divide-x divide-neutral-200 font-medium text-sm bg-neutral-100 border-b border-neutral-200">
               <span className="w-16 px-2 py-1 text-right">#</span>
-              <span className="w-16 px-2 py-1">Rating</span>
+              <span className="w-16 px-2 py-1 text-right">Rating</span>
               <span className="w-24 px-2 py-1">Conference</span>
               <span className="w-64 px-2 py-1">Title</span>
               <span className="flex-1 px-2 py-1">Abstract</span>
@@ -131,8 +131,8 @@ function App() {
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
               {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id || openReview || title}>
                 <span className="w-16 p-2 text-right">{index + 1}</span>
-                <span className="w-16 p-2">{rating ? rating.toFixed(2) : "-"}</span>
-                <span className="w-24 p-2">{conference}</span>
+                <span className="w-16 p-2 text-right">{rating ? rating.toFixed(1) : "-"}</span>
+                <span className="w-24 p-2">{getConferenceLabel(conference)}</span>
                 <span className="w-64 p-2">
                   <p><HighlightedContent text={title} query={loweredQ} /></p>
                   <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title)} target="_blank">[Paper]</a></p>
