@@ -10,3 +10,9 @@ export function getPaperLink(arxiv, openReview, title) {
     if (openReview) return `https://openreview.net/forum?id=${openReview}`;
     return `https://www.google.com/search?q=${encodeURIComponent(title)}`;
 }
+
+export function getPaperLabel(arxiv, openReview) {
+    if (arxiv) return "arXiv";
+    if (openReview) return "OpenReview";
+    return "Google";
+}
