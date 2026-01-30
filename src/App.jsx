@@ -147,7 +147,14 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div className="fixed inset-0 bg-white flex">
+      {/* <div className="fixed inset-0 bg-black/25 z-10" />
+      <div className="fixed inset-4 shadow-lg rounded-2xl bg-white flex z-20 divide-x divide-neutral-200">
+        <embed className="flex-1 rounded-l-2xl" src="https://arxiv.org/pdf/2508.14814#pagemode=none" type="application/pdf" />
+        <div className="w-80 p-4 flex flex-col space-y-4 rounded-r-2xl bg-neutral-50">
+          <h2 className="text-xl font-semibold">Sample Paper</h2>
+          <p>This is a sample paper embedded using the &lt;embed&gt; tag. You can replace the <code>src</code> attribute with any PDF URL to display a different paper.</p>
+          <a className="text-amber-700 hover:underline mt-auto" href="https://arxiv.org/abs/2508.14814" target="_blank">View on arXiv</a>
+        </div>
       </div> */}
     </MathJaxContext>
   )
