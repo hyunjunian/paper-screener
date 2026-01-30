@@ -141,12 +141,14 @@ function App() {
               </li>)}
             </ul>
           </main>
-          <div ref={bottomRef}/>
+          <p className="p-2 border-t border-neutral-200 text-neutral-500" ref={bottomRef}>{filteredPapers.length > count ? "Loading..." : "No more papers"}</p>
           <div className="sticky border-t border-neutral-200 bottom-0 z-10 bg-white p-2 text-sm">
             {filteredPapers.length.toLocaleString()} papers
           </div>
         </div>
       </div>
+      {/* <div className="fixed inset-0 bg-white flex">
+      </div> */}
     </MathJaxContext>
   )
 }
