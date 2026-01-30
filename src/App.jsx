@@ -141,7 +141,7 @@ function App() {
               </li>)}
             </ul>
           </main>
-          {filteredPapers.length > count && <div className="text-neutral-500 p-2 text-sm border-t border-neutral-200" ref={bottomRef}>Loading...</div>}
+          <div ref={bottomRef}/>
           <div className="sticky border-t border-neutral-200 bottom-0 z-10 bg-white p-2 text-sm">
             {filteredPapers.length.toLocaleString()} papers
           </div>
