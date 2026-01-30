@@ -38,9 +38,8 @@ function App() {
 
   useEffect(() => {
     setCount(PAGE_SIZE);
-  }, [loweredQ, conferences]);
+    window.scrollTo({ top: 0 });
 
-  useEffect(() => {
     const params = new URLSearchParams(location.search);
     if (q) params.set("q", q);
     else params.delete("q");
