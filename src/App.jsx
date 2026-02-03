@@ -57,7 +57,7 @@ function App() {
       .then(res => res.text())
       .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
         const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount] = line.split(",");
-        return { id, openReview, arxiv, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
+        return { id: `${conference}_${title}`, openReview, arxiv, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
       })].sort((a, b) => b.rating - a.rating)))));
 
     const observer = new IntersectionObserver(
@@ -128,7 +128,7 @@ function App() {
           </header>
           <main className="min-h-screen">
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
-              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id || openReview || title}>
+              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
                 <span className="w-16 p-2 text-right">{index + 1}</span>
                 <span className="w-16 p-2 text-right">{rating ? rating.toFixed(1) : "-"}</span>
                 <span className="w-24 p-2">{getConferenceLabel(conference)}</span>
