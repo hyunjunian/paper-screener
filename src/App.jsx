@@ -21,8 +21,8 @@ function App() {
   const [count, setCount] = useState(PAGE_SIZE);
   const [conferences, setConferences] = useState(() => new Set(new URLSearchParams(window.location.search).get("conferences")?.split(",") || []));
   const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get("q") || "");
+  const [loweredQ, setLoweredQ] = useState(q.toLowerCase());
 
-  const loweredQ = useMemo(() => q.toLowerCase(), [q]);
   const searchedPapers = useMemo(() => {
     if (!loweredQ) return papers;
     return papers.filter(({ title, abstract }) =>
@@ -37,12 +37,26 @@ function App() {
   }, [searchedPapers, conferences]);
 
   useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoweredQ(q.toLowerCase());
+      setCount(PAGE_SIZE);
+      window.scrollTo({ top: 0 });
+      const params = new URLSearchParams(location.search);
+      if (q) params.set("q", q);
+      else params.delete("q");
+      if (params.size === 0) {
+        window.history.replaceState({}, "", location.pathname);
+        return;
+      }
+      window.history.replaceState({}, "", `${location.pathname}?${params.toString()}`);
+    }, 300);
+    return () => clearTimeout(timeout);
+  }, [q]);
+
+  useEffect(() => {
     setCount(PAGE_SIZE);
     window.scrollTo({ top: 0 });
-
     const params = new URLSearchParams(location.search);
-    if (q) params.set("q", q);
-    else params.delete("q");
     if (conferences.size > 0) params.set("conferences", Array.from(conferences).join(","));
     else params.delete("conferences");
     if (params.size === 0) {
@@ -50,7 +64,7 @@ function App() {
       return;
     }
     window.history.replaceState({}, "", `${location.pathname}?${params.toString()}`);
-  }, [q, conferences]);
+  }, [conferences]);
 
   useEffect(() => {
     Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`)
