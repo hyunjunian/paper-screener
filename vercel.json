@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    { "source": "/*", "destination": "https://hyunjunian.github.io/paper-screener/" }
+    { "source": "/", "destination": "https://hyunjunian.github.io/paper-screener/", "statusCode": 301 }
   ]
 }
