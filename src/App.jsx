@@ -70,8 +70,8 @@ function App() {
     Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`)
       .then(res => res.text())
       .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
-        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount, paperUrl] = line.split(",");
-        return { id: `${conference}_${title}`, openReview, arxiv, paperUrl, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
+        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount] = line.split(",");
+        return { id: `${conference}_${title}`, openReview, arxiv, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
       })].sort((a, b) => b.rating - a.rating)))));
 
     const observer = new IntersectionObserver(
@@ -142,13 +142,13 @@ function App() {
           </header>
           <main className="min-h-screen">
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
-              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, paperUrl, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
+              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
                 <span className="w-16 p-2 text-right">{index + 1}</span>
                 <span className="w-16 p-2 text-right">{rating ? rating.toFixed(1) : "-"}</span>
                 <span className="w-24 p-2">{getConferenceLabel(conference)}</span>
                 <span className="w-64 p-2">
                   <p><HighlightedContent text={title} query={loweredQ} /></p>
-                  <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title, paperUrl)} target="_blank">[{getPaperLabel(arxiv, openReview, paperUrl)}]</a></p>
+                  <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title)} target="_blank">[{getPaperLabel(arxiv, openReview)}]</a></p>
                 </span>
                 <span className="flex-1 p-2"><HighlightedContent text={abstract} query={loweredQ} /></span>
               </li>)}

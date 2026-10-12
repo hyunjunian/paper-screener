@@ -5,16 +5,14 @@ export function getConferenceLabel(conference) {
     return `${abbrev} ${year}`;
 }
 
-export function getPaperLink(arxiv, openReview, title, paperUrl) {
+export function getPaperLink(arxiv, openReview, title) {
     if (arxiv) return `https://arxiv.org/abs/${arxiv}`;
     if (openReview) return `https://openreview.net/forum?id=${openReview}`;
-    if (paperUrl) return paperUrl;
     return `https://www.google.com/search?q=${encodeURIComponent(title)}`;
 }
 
-export function getPaperLabel(arxiv, openReview, paperUrl) {
+export function getPaperLabel(arxiv, openReview) {
     if (arxiv) return "arXiv";
     if (openReview) return "OpenReview";
-    if (paperUrl) return "CVF";
     return "Google";
 }
