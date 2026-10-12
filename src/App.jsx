@@ -13,7 +13,7 @@ const config = {
   },
 };
 const PAGE_SIZE = 100;
-const CONFERENCES = new Set(["icml2026", "cvpr2021", "iclr2017", "nips2020", "nips2000", "iclr2021", "nips2016", "nips1991", "nips1987", "cvpr2017", "cvpr2016", "nips1990", "nips2017", "nips2001", "iclr2020", "nips2021", "cvpr2020", "nips2006", "nips2010", "nips1997", "icml2016", "icml2020", "icml2021", "icml2017", "nips1996", "nips2011", "iclr2026", "nips2007", "cvpr2013", "icml2014", "nips1995", "nips2012", "nips2004", "iclr2025", "nips2024", "nips1999", "icml2018", "iclr2013", "cvpr2025", "nips2008", "icml2022", "icml2023", "nips2009", "cvpr2024", "icml2019", "nips1998", "nips2025", "nips2005", "iclr2024", "nips2013", "nips1994", "icml2015", "nips2022", "nips1989", "cvpr2019", "cvpr2023", "nips2018", "icml2024", "cvpr2015", "nips1993", "iclr2019", "nips2014", "iclr2023", "nips2002", "iclr2022", "nips2003", "nips2015", "iclr2018", "nips1992", "icml2013", "cvpr2014", "icml2025", "nips2019", "cvpr2022", "iclr2014", "cvpr2018", "nips1988", "nips2023"].sort().toReversed());
+const CONFERENCES = new Set(["cvpr2026", "icml2026", "cvpr2021", "iclr2017", "nips2020", "nips2000", "iclr2021", "nips2016", "nips1991", "nips1987", "cvpr2017", "cvpr2016", "nips1990", "nips2017", "nips2001", "iclr2020", "nips2021", "cvpr2020", "nips2006", "nips2010", "nips1997", "icml2016", "icml2020", "icml2021", "icml2017", "nips1996", "nips2011", "iclr2026", "nips2007", "cvpr2013", "icml2014", "nips1995", "nips2012", "nips2004", "iclr2025", "nips2024", "nips1999", "icml2018", "iclr2013", "cvpr2025", "nips2008", "icml2022", "icml2023", "nips2009", "cvpr2024", "icml2019", "nips1998", "nips2025", "nips2005", "iclr2024", "nips2013", "nips1994", "icml2015", "nips2022", "nips1989", "cvpr2019", "cvpr2023", "nips2018", "icml2024", "cvpr2015", "nips1993", "iclr2019", "nips2014", "iclr2023", "nips2002", "iclr2022", "nips2003", "nips2015", "iclr2018", "nips1992", "icml2013", "cvpr2014", "icml2025", "nips2019", "cvpr2022", "iclr2014", "cvpr2018", "nips1988", "nips2023"].sort().toReversed());
 
 function App() {
   const bottomRef = useRef(null);
@@ -70,8 +70,8 @@ function App() {
     Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`)
       .then(res => res.text())
       .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
-        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount] = line.split(",");
-        return { id: `${conference}_${title}`, openReview, arxiv, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
+        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount, paperUrl] = line.split(",");
+        return { id: `${conference}_${title}`, openReview, arxiv, paperUrl, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
       })].sort((a, b) => b.rating - a.rating)))));
 
     const observer = new IntersectionObserver(
@@ -142,13 +142,13 @@ function App() {
           </header>
           <main className="min-h-screen">
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
-              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
+              {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, paperUrl, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
                 <span className="w-16 p-2 text-right">{index + 1}</span>
                 <span className="w-16 p-2 text-right">{rating ? rating.toFixed(1) : "-"}</span>
                 <span className="w-24 p-2">{getConferenceLabel(conference)}</span>
                 <span className="w-64 p-2">
                   <p><HighlightedContent text={title} query={loweredQ} /></p>
-                  <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title)} target="_blank">[{getPaperLabel(arxiv, openReview)}]</a></p>
+                  <p><a className="text-amber-700 hover:underline" href={getPaperLink(arxiv, openReview, title, paperUrl)} target="_blank">[{getPaperLabel(arxiv, openReview, paperUrl)}]</a></p>
                 </span>
                 <span className="flex-1 p-2"><HighlightedContent text={abstract} query={loweredQ} /></span>
               </li>)}
