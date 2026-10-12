@@ -16,3 +16,27 @@ export function getPaperLabel(arxiv, openReview) {
     if (openReview) return "OpenReview";
     return "Google";
 }
+
+export function parseConferenceCsv(text, conference) {
+    const [header, ...lines] = text.replace(/^\uFEFF/, "").trim().split(/\r?\n/);
+    if (header !== "id,open_review,arxiv,title,abstract,rating_sum,rating_count") {
+        throw new Error(`Invalid CSV header for ${conference}`);
+    }
+
+    return lines.filter(line => line.trim()).map(line => {
+        const fields = line.split(",");
+        if (fields.length !== 7) {
+            throw new Error(`Invalid paper row for ${conference}`);
+        }
+        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount] = fields;
+        return {
+            id: `${conference}_${title}`,
+            openReview,
+            arxiv,
+            conference,
+            title: title.replaceAll("##", ","),
+            abstract: abstract.replaceAll("##", ","),
+            rating: ratingSum / ratingCount || 0,
+        };
+    });
+}

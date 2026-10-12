@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { MathJaxContext } from "better-react-mathjax";
 
 import HighlightedContent from "./HighlightedContent";
-import { getConferenceLabel, getPaperLabel, getPaperLink } from "./utils";
+import { getConferenceLabel, getPaperLabel, getPaperLink, parseConferenceCsv } from "./utils";
 
 
 const config = {
@@ -18,6 +18,7 @@ const CONFERENCES = new Set(["cvpr2026", "icml2026", "cvpr2021", "iclr2017", "ni
 function App() {
   const bottomRef = useRef(null);
   const [papers, setPapers] = useState([]);
+  const [loadErrors, setLoadErrors] = useState([]);
   const [count, setCount] = useState(PAGE_SIZE);
   const [conferences, setConferences] = useState(() => new Set(new URLSearchParams(window.location.search).get("conferences")?.split(",") || []));
   const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get("q") || "");
@@ -67,12 +68,17 @@ function App() {
   }, [conferences]);
 
   useEffect(() => {
-    Promise.all(Array.from(CONFERENCES).map((conference) => fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`)
-      .then(res => res.text())
-      .then(text => setPapers((prev) => [...prev, ...text.trim().split("\n").slice(1).map((line) => {
-        const [id, openReview, arxiv, title, abstract, ratingSum, ratingCount] = line.split(",");
-        return { id: `${conference}_${title}`, openReview, arxiv, conference, title: title.replaceAll("##", ","), abstract: abstract.replaceAll("##", ","), rating: ratingSum / ratingCount || 0 };
-      })].sort((a, b) => b.rating - a.rating)))));
+    Array.from(CONFERENCES).forEach(async (conference) => {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}conferences/${conference}.csv`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const loadedPapers = parseConferenceCsv(await response.text(), conference);
+        setPapers(prev => [...prev, ...loadedPapers].sort((a, b) => b.rating - a.rating));
+      } catch (error) {
+        console.error(`Failed to load ${conference}`, error);
+        setLoadErrors(prev => [...new Set([...prev, conference])]);
+      }
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -141,6 +147,9 @@ function App() {
             </li>
           </header>
           <main className="min-h-screen">
+            {loadErrors.length > 0 && <p role="alert" className="p-3 bg-amber-50 text-amber-900">
+              Could not load: {loadErrors.map(getConferenceLabel).join(", ")}. Please refresh to try again.
+            </p>}
             <ul className="divide-y divide-neutral-200 text-sm border-neutral-200">
               {filteredPapers.slice(0, count).map(({ id, openReview, arxiv, conference, title, abstract, rating }, index) => <li className="flex divide-x divide-neutral-200" key={id}>
                 <span className="w-16 p-2 text-right">{index + 1}</span>
