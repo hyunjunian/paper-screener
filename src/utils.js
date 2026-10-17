@@ -1,8 +1,33 @@
 export function getConferenceLabel(conference) {
     const year = conference.slice(-4);
-    const abbrev = conference.slice(0, -4).toUpperCase();
+    const name = conference.slice(0, -4);
+    const abbrev = { aacl: "IJCNLP-AACL", lreccoling: "LREC-COLING" }[name] || name.toUpperCase();
 
     return `${abbrev} ${year}`;
+}
+
+export function parseConferenceJson(papers, conference) {
+    if (!Array.isArray(papers) || papers.length === 0) {
+        throw new Error(`Invalid paper data for ${conference}`);
+    }
+    const ids = new Set();
+    return papers.map(paper => {
+        if (!paper || typeof paper.id !== "string" || !paper.id ||
+            typeof paper.title !== "string" || !paper.title.trim() ||
+            typeof paper.abstract !== "string" || ids.has(paper.id)) {
+            throw new Error(`Invalid paper record for ${conference}`);
+        }
+        ids.add(paper.id);
+        return {
+            id: `${conference}_${paper.id}`,
+            openReview: "",
+            arxiv: "",
+            conference,
+            title: paper.title,
+            abstract: paper.abstract,
+            rating: 0,
+        };
+    });
 }
 
 export function getPaperLink(arxiv, openReview, title) {

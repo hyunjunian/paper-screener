@@ -1,0 +1,194 @@
+{
+  "source": "https://github.com/acl-org/acl-anthology",
+  "revision": "fea0d77e817370d7e09417470426f2a929001b8b",
+  "imported_at": "2026-10-17T07:39:00.789226+00:00",
+  "scope": "Main-conference long/short/main research papers; no Findings, workshops, demos, tutorials, industry, student tracks, or front matter.",
+  "datasets": [
+    {
+      "conference": "acl2023",
+      "papers": 1075,
+      "with_abstract": 1075,
+      "volumes": [
+        "2023.acl-long",
+        "2023.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.acl.xml",
+      "source_sha256": "4a02e87cb81ec2cc192c6a3e3739246ebd3cfca696abb456e06dc9d2ee214ef6",
+      "data_sha256": "0132526762538139bb7da461b2139a1640500c82114a85819d465cb181c48946"
+    },
+    {
+      "conference": "acl2024",
+      "papers": 940,
+      "with_abstract": 939,
+      "volumes": [
+        "2024.acl-long",
+        "2024.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.acl.xml",
+      "source_sha256": "337a57b75135d5d9e5634973031917b8f8cc91da6958c8017c99c18c7f203df7",
+      "data_sha256": "c38400422428e3951b970dd3090ea1c9b33dc0d62509ab515899229b7069a4db"
+    },
+    {
+      "conference": "acl2025",
+      "papers": 1699,
+      "with_abstract": 1699,
+      "volumes": [
+        "2025.acl-long",
+        "2025.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.acl.xml",
+      "source_sha256": "a3e95156af2aae0a6ec39e4c2b34068f9083b2985a76bb75654866c52cf7d7e5",
+      "data_sha256": "59edcc1294cbea453854dfec6741f8c9bbbd9afa3f3894719fa9e4daf262d177"
+    },
+    {
+      "conference": "acl2026",
+      "papers": 2296,
+      "with_abstract": 2295,
+      "volumes": [
+        "2026.acl-long",
+        "2026.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.acl.xml",
+      "source_sha256": "f2f798cc4fe127e8c0b6c5384ee8d20a7433ef05b0a949f69e749ed8c96bd941",
+      "data_sha256": "2d6469efc5009d588b0c150d27fe993ae0b0f6b8cf3aa0afc2862e6d3ebe9dbb"
+    },
+    {
+      "conference": "emnlp2023",
+      "papers": 1047,
+      "with_abstract": 1047,
+      "volumes": [
+        "2023.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.emnlp.xml",
+      "source_sha256": "8384f02e89afa11e5a7d758841701ba189af7ecd7cb88c000e3ff1984e1a1546",
+      "data_sha256": "898eadec1630ef832f37c2dd29ec3ef1da8fca07b947fbffb900b196a2f3fdd2"
+    },
+    {
+      "conference": "emnlp2024",
+      "papers": 1268,
+      "with_abstract": 1237,
+      "volumes": [
+        "2024.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.emnlp.xml",
+      "source_sha256": "8b9eba26273b436befeee1b63bf9778c128400d9e08629cf3b6039de0061f795",
+      "data_sha256": "3b199c720bffe8cc996a01814cfbe15ab134524a567411422c40ffce726a613c"
+    },
+    {
+      "conference": "emnlp2025",
+      "papers": 1809,
+      "with_abstract": 1809,
+      "volumes": [
+        "2025.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.emnlp.xml",
+      "source_sha256": "fe11a982254623764b52baf2a324eae1fc84bab49ecf62456fa3732f00b4f011",
+      "data_sha256": "1f78d861688ee07e86f8dd7c2d33c31bba22bfce0c71614eaf84c0433da2556a"
+    },
+    {
+      "conference": "naacl2024",
+      "papers": 562,
+      "with_abstract": 562,
+      "volumes": [
+        "2024.naacl-long",
+        "2024.naacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.naacl.xml",
+      "source_sha256": "963ea7c81fd0a9cf46b8059e47d2950dcba717e284fcbc98a813f8a5c01996f1",
+      "data_sha256": "f5fc761ac2fb275d663a2a6cb9ac8f8e159fe8d920e5b78a1023094e108d4260"
+    },
+    {
+      "conference": "naacl2025",
+      "papers": 718,
+      "with_abstract": 695,
+      "volumes": [
+        "2025.naacl-long",
+        "2025.naacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.naacl.xml",
+      "source_sha256": "45ace4c6bd1dd4edfa53745898c75ee87c3b7b8202d0e1e207026c2517bad72a",
+      "data_sha256": "815dc25d9225fa31f9b33cd461d14169bd0b4707e47b085fbb30f6e8dfd551d4"
+    },
+    {
+      "conference": "eacl2023",
+      "papers": 280,
+      "with_abstract": 280,
+      "volumes": [
+        "2023.eacl-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.eacl.xml",
+      "source_sha256": "ff3bfc9820e249c450ba565997d6083850e2b9fd147a48e0c5151f6307da3edc",
+      "data_sha256": "a514f720d1f1e97982a3439a22548e106a599d73ee43c5bf53dc77335d57591c"
+    },
+    {
+      "conference": "eacl2024",
+      "papers": 223,
+      "with_abstract": 223,
+      "volumes": [
+        "2024.eacl-long",
+        "2024.eacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.eacl.xml",
+      "source_sha256": "e9c8b8132414f0ba391caaf61d19af99bebc03f063bc688f2082c3bb337057e2",
+      "data_sha256": "b0b0d404f7a9cc66bfc81049e6e2c870e0800e90069346fb65d6cf9889775268"
+    },
+    {
+      "conference": "eacl2026",
+      "papers": 445,
+      "with_abstract": 444,
+      "volumes": [
+        "2026.eacl-long",
+        "2026.eacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.eacl.xml",
+      "source_sha256": "c02713b3d41e4e313eb466990105d983c84b338ca72d5150e15b78b683e4be4a",
+      "data_sha256": "2bbc84a3c3155707404a6a7d2491801426d1b151967ffd564eb4aa2d15c347f4"
+    },
+    {
+      "conference": "lreccoling2024",
+      "papers": 1554,
+      "with_abstract": 1554,
+      "volumes": [
+        "2024.lrec-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.lrec.xml",
+      "source_sha256": "e3353b511e5074118e0b02b4d4f99cd50af6c4ee41e0ad6249387dbd1f826ca5",
+      "data_sha256": "e541e72e326289945681d06d5bcd383cfb8b5892df4e6b26f15682b7c8fd3976"
+    },
+    {
+      "conference": "coling2025",
+      "papers": 757,
+      "with_abstract": 757,
+      "volumes": [
+        "2025.coling-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.coling.xml",
+      "source_sha256": "3efb9f59e073834463fab9f1748f937d3d4699983b3f9494ac21f1623c368e7e",
+      "data_sha256": "b1622fe3c35841f13a39a0cad1adda1a5b6c4888445d59cc3cb0dbf8d08218f0"
+    },
+    {
+      "conference": "aacl2023",
+      "papers": 94,
+      "with_abstract": 0,
+      "volumes": [
+        "2023.ijcnlp-main",
+        "2023.ijcnlp-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.ijcnlp.xml",
+      "source_sha256": "0edb0ab99fc584512ba9b1ac2c39aab4405b42121917871387092bce2de861b5",
+      "data_sha256": "30e00d8dc2ab8f4643fafefe7a63335f074da4b3662a023bed1f77b27139d30e"
+    },
+    {
+      "conference": "aacl2025",
+      "papers": 235,
+      "with_abstract": 235,
+      "volumes": [
+        "2025.ijcnlp-long",
+        "2025.ijcnlp-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.ijcnlp.xml",
+      "source_sha256": "177ac5a591fe19460d3cba7eee924bb90333716890f7eb8041836b0c7ff17e8d",
+      "data_sha256": "837901d5fb01d58dc9a3373fe46ec027416d3dd6e9f545aefe2a6f33ef54cc01"
+    }
+  ]
+}

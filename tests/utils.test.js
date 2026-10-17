@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
-import { parseConferenceCsv } from '../src/utils.js';
+import { createHash } from 'node:crypto';
+import { getConferenceLabel, getPaperLabel, getPaperLink, parseConferenceCsv, parseConferenceJson } from '../src/utils.js';
 
 const header = 'id,open_review,arxiv,title,abstract,rating_sum,rating_count';
 
@@ -30,5 +31,45 @@ test('parses every shipped conference and all CVPR 2026 abstracts', () => {
       assert.equal(papers.length, 4042);
       assert.ok(papers.every(paper => paper.abstract.trim()));
     }
+  }
+});
+
+test('preserves Anthology punctuation, math, blank abstracts and unique paper IDs', () => {
+  const papers = parseConferenceJson([
+    { id: '2025.acl-long.1', title: 'C#, C++ and ## tags', abstract: 'Compare $a,b$ with $c$.' },
+    { id: '2025.acl-short.1', title: 'C#, C++ and ## tags', abstract: '' },
+  ], 'acl2025');
+  assert.equal(papers[0].title, 'C#, C++ and ## tags');
+  assert.equal(papers[0].abstract, 'Compare $a,b$ with $c$.');
+  assert.notEqual(papers[0].id, papers[1].id);
+  assert.equal(papers[1].abstract, '');
+  assert.equal(papers[0].rating, 0);
+  assert.equal(getPaperLabel(papers[0].arxiv, papers[0].openReview), 'Google');
+  assert.equal(getPaperLink('', '', papers[0].title), `https://www.google.com/search?q=${encodeURIComponent(papers[0].title)}`);
+  assert.equal(getConferenceLabel('lreccoling2024'), 'LREC-COLING 2024');
+  assert.equal(getConferenceLabel('aacl2025'), 'IJCNLP-AACL 2025');
+});
+
+test('rejects invalid Anthology responses and duplicate IDs before rendering', () => {
+  for (const data of [null, {}, [], [null], [{ id: '1', title: 'Paper' }]]) {
+    assert.throws(() => parseConferenceJson(data, 'acl2025'), /Invalid paper/);
+  }
+  const paper = { id: '1', title: 'Paper', abstract: '' };
+  assert.throws(() => parseConferenceJson([paper, paper], 'acl2025'), /Invalid paper record/);
+});
+
+test('registers every imported dataset and verifies its provenance and coverage', () => {
+  const registry = JSON.parse(fs.readFileSync(new URL('../src/anthology-conferences.json', import.meta.url), 'utf8'));
+  const manifest = JSON.parse(fs.readFileSync(new URL('../public/conference-sources.json', import.meta.url), 'utf8'));
+  assert.deepEqual(registry, manifest.datasets.map(dataset => dataset.conference));
+  assert.equal(new Set(registry).size, registry.length);
+  for (const dataset of manifest.datasets) {
+    const data = fs.readFileSync(new URL(`../public/conferences/${dataset.conference}.json`, import.meta.url), 'utf8');
+    assert.equal(createHash('sha256').update(data).digest('hex'), dataset.data_sha256);
+    const papers = parseConferenceJson(JSON.parse(data), dataset.conference);
+    assert.equal(papers.length, dataset.papers);
+    assert.equal(papers.filter(paper => paper.abstract).length, dataset.with_abstract);
+    assert.ok(papers.every(paper => paper.rating === 0));
+    assert.ok(dataset.source_url.includes(`/acl-org/acl-anthology/${manifest.revision}/data/xml/`));
   }
 });
