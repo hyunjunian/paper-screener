@@ -1,0 +1,1744 @@
+[
+  {
+    "conference": "aacl2020",
+    "sources": [
+      {
+        "collection": "2020.aacl",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "aacl2022",
+    "sources": [
+      {
+        "collection": "2022.aacl",
+        "volumes": [
+          "main",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "aacl2023",
+    "sources": [
+      {
+        "collection": "2023.ijcnlp",
+        "volumes": [
+          "main",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "aacl2025",
+    "sources": [
+      {
+        "collection": "2025.ijcnlp",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1979",
+    "sources": [
+      {
+        "collection": "P79",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1980",
+    "sources": [
+      {
+        "collection": "P80",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1981",
+    "sources": [
+      {
+        "collection": "P81",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1982",
+    "sources": [
+      {
+        "collection": "P82",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1983",
+    "sources": [
+      {
+        "collection": "P83",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1984",
+    "sources": [
+      {
+        "collection": "P84",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1985",
+    "sources": [
+      {
+        "collection": "P85",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1986",
+    "sources": [
+      {
+        "collection": "P86",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1987",
+    "sources": [
+      {
+        "collection": "P87",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1988",
+    "sources": [
+      {
+        "collection": "P88",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1989",
+    "sources": [
+      {
+        "collection": "P89",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1990",
+    "sources": [
+      {
+        "collection": "P90",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1991",
+    "sources": [
+      {
+        "collection": "P91",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1992",
+    "sources": [
+      {
+        "collection": "P92",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1993",
+    "sources": [
+      {
+        "collection": "P93",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1994",
+    "sources": [
+      {
+        "collection": "P94",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1995",
+    "sources": [
+      {
+        "collection": "P95",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1996",
+    "sources": [
+      {
+        "collection": "P96",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1997",
+    "sources": [
+      {
+        "collection": "P97",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1998",
+    "sources": [
+      {
+        "collection": "P98",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl1999",
+    "sources": [
+      {
+        "collection": "P99",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2000",
+    "sources": [
+      {
+        "collection": "P00",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2001",
+    "sources": [
+      {
+        "collection": "P01",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2002",
+    "sources": [
+      {
+        "collection": "P02",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2003",
+    "sources": [
+      {
+        "collection": "P03",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2004",
+    "sources": [
+      {
+        "collection": "P04",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2005",
+    "sources": [
+      {
+        "collection": "P05",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2006",
+    "sources": [
+      {
+        "collection": "P06",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2007",
+    "sources": [
+      {
+        "collection": "P07",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2008",
+    "sources": [
+      {
+        "collection": "P08",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2009",
+    "sources": [
+      {
+        "collection": "P09",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2010",
+    "sources": [
+      {
+        "collection": "P10",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2011",
+    "sources": [
+      {
+        "collection": "P11",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2012",
+    "sources": [
+      {
+        "collection": "P12",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2013",
+    "sources": [
+      {
+        "collection": "P13",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2014",
+    "sources": [
+      {
+        "collection": "P14",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2015",
+    "sources": [
+      {
+        "collection": "P15",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2016",
+    "sources": [
+      {
+        "collection": "P16",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2017",
+    "sources": [
+      {
+        "collection": "P17",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2018",
+    "sources": [
+      {
+        "collection": "P18",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2019",
+    "sources": [
+      {
+        "collection": "P19",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2020",
+    "sources": [
+      {
+        "collection": "2020.acl",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2021",
+    "sources": [
+      {
+        "collection": "2021.acl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2022",
+    "sources": [
+      {
+        "collection": "2022.acl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2023",
+    "sources": [
+      {
+        "collection": "2023.acl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2024",
+    "sources": [
+      {
+        "collection": "2024.acl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2025",
+    "sources": [
+      {
+        "collection": "2025.acl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "acl2026",
+    "sources": [
+      {
+        "collection": "2026.acl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1965",
+    "sources": [
+      {
+        "collection": "C65",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1967",
+    "sources": [
+      {
+        "collection": "C67",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1969",
+    "sources": [
+      {
+        "collection": "C69",
+        "volumes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "52",
+          "53",
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64",
+          "65",
+          "66",
+          "67",
+          "68",
+          "69",
+          "70",
+          "71",
+          "72",
+          "73",
+          "74",
+          "75",
+          "76"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1973",
+    "sources": [
+      {
+        "collection": "C73",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1980",
+    "sources": [
+      {
+        "collection": "C80",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1982",
+    "sources": [
+      {
+        "collection": "C82",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1984",
+    "sources": [
+      {
+        "collection": "P84",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1986",
+    "sources": [
+      {
+        "collection": "C86",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1988",
+    "sources": [
+      {
+        "collection": "C88",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1990",
+    "sources": [
+      {
+        "collection": "C90",
+        "volumes": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1992",
+    "sources": [
+      {
+        "collection": "C92",
+        "volumes": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1994",
+    "sources": [
+      {
+        "collection": "C94",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1996",
+    "sources": [
+      {
+        "collection": "C96",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling1998",
+    "sources": [
+      {
+        "collection": "C98",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2000",
+    "sources": [
+      {
+        "collection": "C00",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2002",
+    "sources": [
+      {
+        "collection": "C02",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2004",
+    "sources": [
+      {
+        "collection": "C04",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2006",
+    "sources": [
+      {
+        "collection": "P06",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2008",
+    "sources": [
+      {
+        "collection": "C08",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2010",
+    "sources": [
+      {
+        "collection": "C10",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2012",
+    "sources": [
+      {
+        "collection": "C12",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2014",
+    "sources": [
+      {
+        "collection": "C14",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2016",
+    "sources": [
+      {
+        "collection": "C16",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2018",
+    "sources": [
+      {
+        "collection": "C18",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2020",
+    "sources": [
+      {
+        "collection": "2020.coling",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2022",
+    "sources": [
+      {
+        "collection": "2022.coling",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "coling2025",
+    "sources": [
+      {
+        "collection": "2025.coling",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1983",
+    "sources": [
+      {
+        "collection": "E83",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1985",
+    "sources": [
+      {
+        "collection": "E85",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1987",
+    "sources": [
+      {
+        "collection": "E87",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1989",
+    "sources": [
+      {
+        "collection": "E89",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1991",
+    "sources": [
+      {
+        "collection": "E91",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1993",
+    "sources": [
+      {
+        "collection": "E93",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1995",
+    "sources": [
+      {
+        "collection": "E95",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1997",
+    "sources": [
+      {
+        "collection": "P97",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl1999",
+    "sources": [
+      {
+        "collection": "E99",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2003",
+    "sources": [
+      {
+        "collection": "E03",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2006",
+    "sources": [
+      {
+        "collection": "E06",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2009",
+    "sources": [
+      {
+        "collection": "E09",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2012",
+    "sources": [
+      {
+        "collection": "E12",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2014",
+    "sources": [
+      {
+        "collection": "E14",
+        "volumes": [
+          "1",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2017",
+    "sources": [
+      {
+        "collection": "E17",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2021",
+    "sources": [
+      {
+        "collection": "2021.eacl",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2023",
+    "sources": [
+      {
+        "collection": "2023.eacl",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2024",
+    "sources": [
+      {
+        "collection": "2024.eacl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "eacl2026",
+    "sources": [
+      {
+        "collection": "2026.eacl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp1996",
+    "sources": [
+      {
+        "collection": "W96",
+        "volumes": [
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp1997",
+    "sources": [
+      {
+        "collection": "W97",
+        "volumes": [
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp1998",
+    "sources": [
+      {
+        "collection": "W98",
+        "volumes": [
+          "15"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp1999",
+    "sources": [
+      {
+        "collection": "W99",
+        "volumes": [
+          "6"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2000",
+    "sources": [
+      {
+        "collection": "W00",
+        "volumes": [
+          "13"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2001",
+    "sources": [
+      {
+        "collection": "W01",
+        "volumes": [
+          "5"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2002",
+    "sources": [
+      {
+        "collection": "W02",
+        "volumes": [
+          "10"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2003",
+    "sources": [
+      {
+        "collection": "W03",
+        "volumes": [
+          "10"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2004",
+    "sources": [
+      {
+        "collection": "W04",
+        "volumes": [
+          "32"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2005",
+    "sources": [
+      {
+        "collection": "H05",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2006",
+    "sources": [
+      {
+        "collection": "W06",
+        "volumes": [
+          "16"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2007",
+    "sources": [
+      {
+        "collection": "D07",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2008",
+    "sources": [
+      {
+        "collection": "D08",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2009",
+    "sources": [
+      {
+        "collection": "D09",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2010",
+    "sources": [
+      {
+        "collection": "D10",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2011",
+    "sources": [
+      {
+        "collection": "D11",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2012",
+    "sources": [
+      {
+        "collection": "D12",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2013",
+    "sources": [
+      {
+        "collection": "D13",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2014",
+    "sources": [
+      {
+        "collection": "D14",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2015",
+    "sources": [
+      {
+        "collection": "D15",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2016",
+    "sources": [
+      {
+        "collection": "D16",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2017",
+    "sources": [
+      {
+        "collection": "D17",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2018",
+    "sources": [
+      {
+        "collection": "D18",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2019",
+    "sources": [
+      {
+        "collection": "D19",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2020",
+    "sources": [
+      {
+        "collection": "2020.emnlp",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2021",
+    "sources": [
+      {
+        "collection": "2021.emnlp",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2022",
+    "sources": [
+      {
+        "collection": "2022.emnlp",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2023",
+    "sources": [
+      {
+        "collection": "2023.emnlp",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2024",
+    "sources": [
+      {
+        "collection": "2024.emnlp",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "emnlp2025",
+    "sources": [
+      {
+        "collection": "2025.emnlp",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "lreccoling2024",
+    "sources": [
+      {
+        "collection": "2024.lrec",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2000",
+    "sources": [
+      {
+        "collection": "A00",
+        "volumes": [
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2001",
+    "sources": [
+      {
+        "collection": "N01",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2003",
+    "sources": [
+      {
+        "collection": "N03",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2004",
+    "sources": [
+      {
+        "collection": "N04",
+        "volumes": [
+          "1",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2006",
+    "sources": [
+      {
+        "collection": "N06",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2007",
+    "sources": [
+      {
+        "collection": "N07",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2009",
+    "sources": [
+      {
+        "collection": "N09",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2010",
+    "sources": [
+      {
+        "collection": "N10",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2012",
+    "sources": [
+      {
+        "collection": "N12",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2013",
+    "sources": [
+      {
+        "collection": "N13",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2015",
+    "sources": [
+      {
+        "collection": "N15",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2016",
+    "sources": [
+      {
+        "collection": "N16",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2018",
+    "sources": [
+      {
+        "collection": "N18",
+        "volumes": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2019",
+    "sources": [
+      {
+        "collection": "N19",
+        "volumes": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2021",
+    "sources": [
+      {
+        "collection": "2021.naacl",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2022",
+    "sources": [
+      {
+        "collection": "2022.naacl",
+        "volumes": [
+          "main"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2024",
+    "sources": [
+      {
+        "collection": "2024.naacl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "conference": "naacl2025",
+    "sources": [
+      {
+        "collection": "2025.naacl",
+        "volumes": [
+          "long",
+          "short"
+        ]
+      }
+    ]
+  }
+]

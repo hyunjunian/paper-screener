@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import test from 'node:test';
 import { createHash } from 'node:crypto';
 import { getConferenceLabel, getPaperLabel, getPaperLink, parseConferenceCsv, parseConferenceJson } from '../src/utils.js';
+import { loadConferenceData, loadConferenceBatches } from '../src/data-loader.js';
 
 const header = 'id,open_review,arxiv,title,abstract,rating_sum,rating_count';
 
@@ -72,4 +73,64 @@ test('registers every imported dataset and verifies its provenance and coverage'
     assert.ok(papers.every(paper => paper.rating === 0));
     assert.ok(dataset.source_url.includes(`/acl-org/acl-anthology/${manifest.revision}/data/xml/`));
   }
+});
+
+test('preserves overall review means, zero scores, forum links and missing scores', () => {
+  const papers = parseConferenceJson([
+    { id: 'a', title: 'Rated', abstract: '', openReview: 'abc', ratingSum: 21, ratingCount: 3, ratingField: 'recommendation', ratingSource: 'Public archive' },
+    { id: 'b', title: 'Zero', abstract: '', ratingSum: 0, ratingCount: 2 },
+    { id: 'c', title: 'Missing', abstract: '', confidence: 9 },
+  ], 'iclr2023');
+  assert.equal(papers[0].rating, 7);
+  assert.equal(papers[0].ratingCount, 3);
+  assert.equal(papers[0].ratingField, 'recommendation');
+  assert.equal(getPaperLink('', papers[0].openReview, papers[0].title), 'https://openreview.net/forum?id=abc');
+  assert.equal(papers[1].rating, 0);
+  assert.equal(papers[1].ratingCount, 2);
+  assert.equal(papers[2].ratingCount, 0);
+  assert.throws(() => parseConferenceJson([{ id: 'bad', title: 'Bad', abstract: '', ratingCount: -1 }], 'iclr2023'), /Invalid paper review/);
+});
+
+test('validates every active historical dataset and its visible coverage counts', () => {
+  const catalog = JSON.parse(fs.readFileSync(new URL('../src/conference-catalog.json', import.meta.url), 'utf8'));
+  assert.ok(Object.keys(catalog).length >= 230);
+  for (const [conference, entry] of Object.entries(catalog)) {
+    const data = fs.readFileSync(new URL(`../public/conferences/${conference}.${entry.format}`, import.meta.url), 'utf8');
+    const papers = entry.format === 'json' ? parseConferenceJson(JSON.parse(data), conference) : parseConferenceCsv(data, conference);
+    assert.equal(papers.length, entry.papers, conference);
+    assert.equal(papers.filter(paper => paper.abstract).length, entry.with_abstract, conference);
+    assert.equal(papers.filter(paper => paper.ratingCount > 0).length, entry.with_reviews, conference);
+    assert.ok(papers.every(paper => Number.isFinite(paper.rating)), conference);
+  }
+  for (const conference of ['acl1979', 'emnlp1996', 'naacl2000', 'eacl1983', 'coling1965', 'aacl2020', 'iclr2015', 'iclr2016', 'icml2010']) {
+    assert.ok(catalog[conference], conference);
+  }
+  const manifest = JSON.parse(fs.readFileSync(new URL('../public/core-conference-sources.json', import.meta.url), 'utf8'));
+  for (const dataset of manifest.datasets) {
+    const data = fs.readFileSync(new URL(`../public/conferences/${dataset.conference}.json`, import.meta.url), 'utf8');
+    assert.equal(createHash('sha256').update(data).digest('hex'), dataset.data_sha256);
+  }
+  assert.equal(catalog.iclr2022.with_reviews, 1094);
+  assert.equal(catalog.iclr2023.with_reviews, 1573);
+});
+
+test('reports HTTP and malformed-data failures without losing other conferences', async () => {
+  await assert.rejects(loadConferenceData('acl2025', 'json', '/paper-screener/', async url => {
+    assert.equal(url, '/paper-screener/conferences/acl2025.json');
+    return { ok: false, status: 404 };
+  }), /HTTP 404/);
+  await assert.rejects(loadConferenceData('acl2025', 'json', '/', async () => ({ ok: true, json: async () => ({ error: 'bad response' }) })), /Invalid paper data/);
+  const loaded = [], failed = [];
+  let active = 0, maxActive = 0;
+  await loadConferenceBatches(Array.from({ length: 9 }, (_, i) => i), async i => {
+    active++;
+    maxActive = Math.max(maxActive, active);
+    await new Promise(setImmediate);
+    active--;
+    if (i === 2) throw new Error('Network failure');
+    return [i];
+  }, batch => loaded.push(...batch), conference => failed.push(conference));
+  assert.deepEqual(failed, [2]);
+  assert.deepEqual(loaded, [0, 1, 3, 4, 5, 6, 7, 8]);
+  assert.ok(maxActive <= 4);
 });

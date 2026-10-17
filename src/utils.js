@@ -1,7 +1,7 @@
 export function getConferenceLabel(conference) {
     const year = conference.slice(-4);
     const name = conference.slice(0, -4);
-    const abbrev = { aacl: "IJCNLP-AACL", lreccoling: "LREC-COLING" }[name] || name.toUpperCase();
+    const abbrev = { aacl: "IJCNLP-AACL", lreccoling: "LREC-COLING", nips: "NeurIPS" }[name] || name.toUpperCase();
 
     return `${abbrev} ${year}`;
 }
@@ -17,15 +17,25 @@ export function parseConferenceJson(papers, conference) {
             typeof paper.abstract !== "string" || ids.has(paper.id)) {
             throw new Error(`Invalid paper record for ${conference}`);
         }
+        const ratingCount = paper.ratingCount ?? 0;
+        const ratingSum = paper.ratingSum ?? 0;
+        if (!Number.isInteger(ratingCount) || ratingCount < 0 || !Number.isFinite(ratingSum) ||
+            ratingSum < 0 || (paper.openReview !== undefined && typeof paper.openReview !== "string") ||
+            (paper.arxiv !== undefined && typeof paper.arxiv !== "string")) {
+            throw new Error(`Invalid paper review data for ${conference}`);
+        }
         ids.add(paper.id);
         return {
             id: `${conference}_${paper.id}`,
-            openReview: "",
-            arxiv: "",
+            openReview: paper.openReview || "",
+            arxiv: paper.arxiv || "",
             conference,
             title: paper.title,
             abstract: paper.abstract,
-            rating: 0,
+            rating: ratingCount ? ratingSum / ratingCount : 0,
+            ratingCount,
+            ratingSource: paper.ratingSource || "",
+            ratingField: paper.ratingField || "overall rating",
         };
     });
 }
@@ -62,6 +72,9 @@ export function parseConferenceCsv(text, conference) {
             title: title.replaceAll("##", ","),
             abstract: abstract.replaceAll("##", ","),
             rating: ratingSum / ratingCount || 0,
+            ratingCount: Number(ratingCount) || 0,
+            ratingSource: "Existing OpenReview-linked dataset",
+            ratingField: "overall rating",
         };
     });
 }

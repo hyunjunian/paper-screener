@@ -1,0 +1,538 @@
+{
+  "imported_at": "2026-10-17T08:03:03.909060+00:00",
+  "scope": "Accepted main conference papers. Workshops, rejected/withdrawn submissions, separate NeurIPS Datasets and Benchmarks and ICML Position tracks excluded where identified in source.",
+  "review_notes": [
+    "Scores are means on the original conference/year scale, not normalized across conferences.",
+    "Existing OpenReview-linked review aggregates are preserved for exact matched accepted papers. They were not re-fetched from the live OpenReview API in this import.",
+    "Paper Copilot ICLR 2017–2019 ratings and ICLR 2022–2023 / ICML 2025 recommendations provide individual public reviewer scores. Confidence and correctness are never used as overall scores."
+  ],
+  "coverage_notes": [
+    "ICML before 2010 and CVPR before 2013 are not yet imported: live proceedings and DBLP bulk access are unavailable in this environment.",
+    "ICLR 2015 and 2016 use archived conference oral/poster bibliographies with arXiv IDs; their abstracts and reviews are unavailable in the source.",
+    "ICLR 2013/2014 historical acceptance labels rely on Paper Copilot archive labels."
+  ],
+  "datasets": [
+    {
+      "conference": "iclr2020",
+      "papers": 824,
+      "with_abstract": 818,
+      "with_reviews": 816,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2020.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=ICLR.cc/2020/Conference; https://api.openreview.net/notes?invitation=ICLR.cc/2020/Conference/-/Blind_Submission"
+      ],
+      "source_sha256": "732cf0e17261fd38cbed6b000d5134187d2f734fca5facbfa9ee896655105f9b",
+      "data_sha256": "eb5b7a8539a7115a3c22c752d52f23223628005bec53f863459d82d6526f9c1a",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2020.csv"
+    },
+    {
+      "conference": "iclr2021",
+      "papers": 860,
+      "with_abstract": 860,
+      "with_reviews": 860,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2021.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=ICLR.cc/2021/Conference"
+      ],
+      "source_sha256": "314ec15c6ce50d9587fc7e0c2c98870112d3fbda3b1893eff2c3face5d65ac4c",
+      "data_sha256": "1162b9819121edc330b85496e4555599d3d4af78cbad98606f70264ab93c9c9f",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2021.csv"
+    },
+    {
+      "conference": "iclr2022",
+      "papers": 1094,
+      "with_abstract": 1094,
+      "with_reviews": 1094,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2022.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=ICLR.cc/2022/Conference; https://api2.openreview.net/profiles?id=<openreview-profile-id>"
+      ],
+      "source_sha256": "b62f54f70fa61eaf5911333ca091e12d2c43dd24663876201a55c2bb3d9ce9e9",
+      "data_sha256": "4e18477addef796fa8ac28cc6f79650df2b7f3229b319cd4b6929a97e10c3f5e",
+      "excluded": {},
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2022.json",
+      "public_review_archive_sha256": "c5ee2e92590a8d35880dab321c584cc02594b5ecf6d6dc4423bb88c97355621f",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2022.csv"
+    },
+    {
+      "conference": "iclr2023",
+      "papers": 1573,
+      "with_abstract": 1573,
+      "with_reviews": 1573,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2023.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=ICLR.cc/2023/Conference; https://api2.openreview.net/profiles?id=<openreview-profile-id>"
+      ],
+      "source_sha256": "43b8bc424e8ed9fa3ce8797070bb88daa34e29d5d5181b825d194b983c9ea5ba",
+      "data_sha256": "66a722700dda115627571e3595623954c518beac798ef01e81c1c569e353f8f6",
+      "excluded": {},
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2023.json",
+      "public_review_archive_sha256": "fac275dde32ef7b9ebeee8a8b38c0de41028b0f249cd8f2a2736cf25eb3c5120",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2023.csv"
+    },
+    {
+      "conference": "iclr2024",
+      "papers": 2260,
+      "with_abstract": 2260,
+      "with_reviews": 2260,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2024.json",
+      "upstream_urls": [
+        "https://api2.openreview.net/notes?content.venueid=ICLR.cc/2024/Conference; https://api2.openreview.net/profiles?id=<openreview-profile-id>"
+      ],
+      "source_sha256": "3473ec12a76641b932bd9f0e1334a75206248a12a8349bb8547f6b28b1142f4b",
+      "data_sha256": "61a131913ecd0586a7ee9216b67bb0d2e4d4b05deeae16b59bad4008211c61f2",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2024.csv"
+    },
+    {
+      "conference": "iclr2025",
+      "papers": 3703,
+      "with_abstract": 3703,
+      "with_reviews": 3703,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2025.json",
+      "upstream_urls": [
+        "https://api2.openreview.net/notes?content.venueid=ICLR.cc/2025/Conference; https://api2.openreview.net/profiles?id=<openreview-profile-id>"
+      ],
+      "source_sha256": "3441139b960e187d22aff9411feb038891989c726aba28a5706faca99562b457",
+      "data_sha256": "37464b8568837b0bc46547dd7bba9689cf8add25fa277bcd17cead3d62849719",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2025.csv"
+    },
+    {
+      "conference": "iclr2026",
+      "papers": 5351,
+      "with_abstract": 5351,
+      "with_reviews": 4890,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/iclr/iclr2026.json",
+      "upstream_urls": [
+        "https://api2.openreview.net/notes?content.venueid=ICLR.cc/2026/Conference; https://api2.openreview.net/profiles?id=<openreview-profile-id>"
+      ],
+      "source_sha256": "02a2b2135e2fb28cd7638e6a5859386dcfb0e0dde606c2ca571f7909d5740395",
+      "data_sha256": "661be076039beb63d701591338adb6731fb5a2015ce3ea754379f9782b0ba566",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2026.csv"
+    },
+    {
+      "conference": "icml2020",
+      "papers": 1084,
+      "with_abstract": 1084,
+      "with_reviews": 0,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2020.json",
+      "upstream_urls": [
+        "https://proceedings.mlr.press/v119/"
+      ],
+      "source_sha256": "e0fec22076ea94f158963124738264c816f23e7d91f15bac317dc16b057d3a6e",
+      "data_sha256": "ef87693f79654d1d1ae222bcf7f7ee358f07041310456eacd7e1b7c8d9a9da99",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2020.csv"
+    },
+    {
+      "conference": "icml2021",
+      "papers": 1183,
+      "with_abstract": 1183,
+      "with_reviews": 0,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2021.json",
+      "upstream_urls": [
+        "https://proceedings.mlr.press/v139/"
+      ],
+      "source_sha256": "b869dcd5e569f4339d845baf8dd58342236f51f3278cbc76582bd3cb92b03041",
+      "data_sha256": "6be03892d57a0abaaa01e1fe49650cbc8166f3003740514876905b225e8c34b6",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2021.csv"
+    },
+    {
+      "conference": "icml2022",
+      "papers": 1233,
+      "with_abstract": 1233,
+      "with_reviews": 0,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2022.json",
+      "upstream_urls": [
+        "https://proceedings.mlr.press/v162/"
+      ],
+      "source_sha256": "b348a11ff83963459e44c3c77c23d02ed16cd6cd085963096c483a379016d3cc",
+      "data_sha256": "848b9ebd1c366a809afcfb240e77e591e1c5ae38e7bdc62f983a657db7568f9e",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2022.csv"
+    },
+    {
+      "conference": "icml2023",
+      "papers": 1828,
+      "with_abstract": 1828,
+      "with_reviews": 0,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2023.json",
+      "upstream_urls": [
+        "https://proceedings.mlr.press/v202/"
+      ],
+      "source_sha256": "5e32854a0c26c709ea479e3e626cc5042728dd225ca9bdbc66d8c4b91fa3feb0",
+      "data_sha256": "d8df6a31f0ff8a4d3af5f80f5b198ecc06640bc6752bc00730f64f34c9733d92",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2023.csv"
+    },
+    {
+      "conference": "icml2024",
+      "papers": 2535,
+      "with_abstract": 2535,
+      "with_reviews": 0,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2024.json",
+      "upstream_urls": [
+        "https://proceedings.mlr.press/v235/"
+      ],
+      "source_sha256": "f8096440971a8b8a5ce107156f7b5eef5e93f109bf5bdb205bed2946e9521a21",
+      "data_sha256": "f10a33837c104f041a3e8304bc537253741440ffbf554b4d966f1c26281a1dc5",
+      "excluded": {
+        "Position paper": 75
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/icml/icml2024.json",
+      "public_review_archive_sha256": "c6380e389649b9c7f54c22696f5d41662ea07c01615c7592194d5df793397bf9",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2024.csv"
+    },
+    {
+      "conference": "icml2025",
+      "papers": 3257,
+      "with_abstract": 3257,
+      "with_reviews": 3204,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2025.json",
+      "upstream_urls": [
+        "https://proceedings.mlr.press/v267/"
+      ],
+      "source_sha256": "b46a0070f891093367cd3dbd7d8444dc0bf4ddb06466fccdd56aa48f93acade7",
+      "data_sha256": "d2b0c0daaa79b4099c5fcbd4e92256d0f862c63cc340fee67650af7c9315b0b6",
+      "excluded": {
+        "Position paper": 73
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/icml/icml2025.json",
+      "public_review_archive_sha256": "7c71eac1bf6f923cf72100c098168c648f2bec5d7f21187186d98c55ac8f11e0",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2025.csv"
+    },
+    {
+      "conference": "icml2026",
+      "papers": 6415,
+      "with_abstract": 6415,
+      "with_reviews": 6341,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/icml/icml2026.json",
+      "upstream_urls": [
+        "https://icml.cc/virtual/2026/papers.html?filter=titles; https://icml.cc/static/virtual/data/icml-2026-orals-posters.json; https://icml.cc/static/virtual/data/icml-2026-abstracts.json"
+      ],
+      "source_sha256": "81a7959f662034c7e85f69797a10c2c4c2db4c1aa869a9d7c8cf661c02103020",
+      "data_sha256": "5395713f17aa6e5bef2f16561becdbed5bdc4835538bada8a07757117b503ebb",
+      "excluded": {
+        "Position paper": 213
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/icml/icml2026.json",
+      "public_review_archive_sha256": "4d7bdf4090a48d41f605d831ab0d6cdd0ab1f0d18cdfc73caa86affff3445ccf",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/icml2026.csv"
+    },
+    {
+      "conference": "nips2020",
+      "papers": 1953,
+      "with_abstract": 1904,
+      "with_reviews": 0,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/nips/nips2020.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=NeurIPS.cc/2020/Conference; https://neurips.cc/virtual/2020/papers.html?filter=titles; https://neurips.cc/static/virtual/data/neurips-2020-orals-posters.json"
+      ],
+      "source_sha256": "245b8f78a973785f8a2ff39f60610e7afc09d0c6f4109945c648e33e447df616",
+      "data_sha256": "347ad2f9595cfb8489e571880af4e280121f5f096388a664ca7f2a2ca821a4ae",
+      "excluded": {},
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/nips/nips2020.json",
+      "public_review_archive_sha256": "0da0ddcaf1b98bf1b1b49b600691c611dc3d519d01ce500fa8e76cdea4e9b781",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/nips2020.csv"
+    },
+    {
+      "conference": "nips2021",
+      "papers": 2334,
+      "with_abstract": 2334,
+      "with_reviews": 2334,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/nips/nips2021.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=NeurIPS.cc/2021/Conference; https://api.openreview.net/notes?content.venueid=NeurIPS.cc/2021/Track/Datasets_and_Benchmarks/Round1; https://api.openreview.net/notes?content.venueid=NeurIPS.cc/2021/Track/Datasets_and_Benchmarks/Round2; https://neurips.cc/virtual/2021/papers.html?filter=titles; https://neurips.cc/static/virtual/data/neurips-2021-orals-posters.json"
+      ],
+      "source_sha256": "b42380d5f7e296a6842c29caa7d88d3f2e9327e3120071431c299e822185092a",
+      "data_sha256": "fe80aa3133ac8fa9ad7f58968d84d217bf5843e3aa8ba941ff6c5154243da34d",
+      "excluded": {
+        "Datasets and Benchmarks": 174
+      },
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/nips2021.csv"
+    },
+    {
+      "conference": "nips2022",
+      "papers": 2739,
+      "with_abstract": 2739,
+      "with_reviews": 2671,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/nips/nips2022.json",
+      "upstream_urls": [
+        "https://api.openreview.net/notes?content.venueid=NeurIPS.cc/2022/Conference; https://api.openreview.net/notes?content.venueid=NeurIPS.cc/2022/Track/Datasets_and_Benchmarks; https://neurips.cc/virtual/2022/papers.html?filter=titles; https://neurips.cc/static/virtual/data/neurips-2022-orals-posters.json"
+      ],
+      "source_sha256": "044f49b33a0ef481c0c9f59813426ed37160de1e1b200bfda94508d917965c2b",
+      "data_sha256": "4aad85ab4331b5af056d9a595c08da0009b507f9429b635a1a53f87f6f23a03a",
+      "excluded": {
+        "Datasets and Benchmarks": 163
+      },
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/nips2022.csv"
+    },
+    {
+      "conference": "nips2023",
+      "papers": 3266,
+      "with_abstract": 3265,
+      "with_reviews": 3218,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/nips/nips2023.json",
+      "upstream_urls": [
+        "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc/2023/Conference; https://api2.openreview.net/notes?content.venueid=NeurIPS.cc/2023/Track/Datasets_and_Benchmarks; https://neurips.cc/virtual/2023/papers.html?filter=titles; https://neurips.cc/static/virtual/data/neurips-2023-orals-posters.json"
+      ],
+      "source_sha256": "1fb2db71df930f372a5f5aad967de8e404be616682f0627834011982920be681",
+      "data_sha256": "2df6952f56b50bfc5085b70cc8ac53e9cb6a73e9d2612dcaa2e28012d02b2824",
+      "excluded": {
+        "Datasets and Benchmarks": 322
+      },
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/nips2023.csv"
+    },
+    {
+      "conference": "nips2024",
+      "papers": 4078,
+      "with_abstract": 4078,
+      "with_reviews": 4035,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/nips/nips2024.json",
+      "upstream_urls": [
+        "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc/2024/Conference; https://api2.openreview.net/notes?content.venueid=NeurIPS.cc/2024/Datasets_and_Benchmarks_Track; https://neurips.cc/virtual/2024/papers.html?filter=titles; https://neurips.cc/static/virtual/data/neurips-2024-orals-posters.json"
+      ],
+      "source_sha256": "c6011aee0d500261b9834a2ea98b8a48c356128084fb15d5ed3bc4324d29ff40",
+      "data_sha256": "3fc3532f4ee72613549f42b20f2a225807034a0d3bbedc6ff040383ccda75528",
+      "excluded": {
+        "Datasets and Benchmarks": 459,
+        "duplicate": 1
+      },
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/nips2024.csv"
+    },
+    {
+      "conference": "nips2025",
+      "papers": 5416,
+      "with_abstract": 5415,
+      "with_reviews": 5365,
+      "source_url": "https://github.com/chang-xinhai/AI-Conference-Paper-Lists/blob/02b3239aacb526b4abedd12dda8a98a121b02ba6/data/normalized/nips/nips2025.json",
+      "upstream_urls": [
+        "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc/2025/Conference; https://api2.openreview.net/notes?content.venueid=NeurIPS.cc/2025/Datasets_and_Benchmarks_Track; https://neurips.cc/virtual/2025/papers.html?filter=titles; https://neurips.cc/static/virtual/data/neurips-2025-orals-posters.json"
+      ],
+      "source_sha256": "ceae5fe7eaab096d668778b3e25534feb6edab463afcead65ea40e6f414fab3f",
+      "data_sha256": "1832abd37a9f0c195dba08cccecb907d9f38cf6c9be1186a7e611a6db44e5ba6",
+      "excluded": {
+        "Datasets and Benchmarks": 497
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/nips/nips2025.json",
+      "public_review_archive_sha256": "70fed9e85ceef1557c629a192ed04a1f43aea33644e3a62570d64467834574d4",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/nips2025.csv"
+    },
+    {
+      "conference": "iclr2013",
+      "papers": 23,
+      "with_abstract": 23,
+      "with_reviews": 0,
+      "source_url": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2013.json",
+      "upstream_urls": [],
+      "source_sha256": "93e4fee4dc4e1209f9b276cb34b456b725c705ec818bc4c401e9f41b1d91de4a",
+      "data_sha256": "d3422c02be65d282edb4697f806e2debdf1399d9dc960cb56cf050480d31b80c",
+      "excluded": {
+        "Poster Workshop": 25,
+        "Oral Workshop": 7,
+        "Reject": 12
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2013.json",
+      "public_review_archive_sha256": "93e4fee4dc4e1209f9b276cb34b456b725c705ec818bc4c401e9f41b1d91de4a",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2013.csv"
+    },
+    {
+      "conference": "iclr2014",
+      "papers": 69,
+      "with_abstract": 69,
+      "with_reviews": 0,
+      "source_url": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2014.json",
+      "upstream_urls": [],
+      "source_sha256": "883f505fa7356177d0396dbff0158f758738826a3e01ea2db0a141a5f7010ce8",
+      "data_sha256": "d9bb84721e2fe364fff10893644970961aee2df59a1f19aae3875954e3257a22",
+      "excluded": {},
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2014.json",
+      "public_review_archive_sha256": "883f505fa7356177d0396dbff0158f758738826a3e01ea2db0a141a5f7010ce8",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2014.csv"
+    },
+    {
+      "conference": "iclr2017",
+      "papers": 198,
+      "with_abstract": 198,
+      "with_reviews": 198,
+      "source_url": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2017.json",
+      "upstream_urls": [],
+      "source_sha256": "8b299919812bacd6dca4fbc9d1e65cf84a7c7e68d6c414ef58c34b27f4109cf4",
+      "data_sha256": "2bee36ed0b88574dc32b930972acb426bbecaf9fd651ef5543cef80f2c61fdf8",
+      "excluded": {
+        "Reject": 245,
+        "Workshop": 47
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2017.json",
+      "public_review_archive_sha256": "8b299919812bacd6dca4fbc9d1e65cf84a7c7e68d6c414ef58c34b27f4109cf4",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2017.csv"
+    },
+    {
+      "conference": "iclr2018",
+      "papers": 337,
+      "with_abstract": 337,
+      "with_reviews": 337,
+      "source_url": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2018.json",
+      "upstream_urls": [],
+      "source_sha256": "8a0990099702065f3d01065f11435f0a083afbd791a48c1477975ab54b57bcfa",
+      "data_sha256": "b8acebcb3bd7d07e1a3c17c8342e9b704f7d626bc330cf4cabcca667ba110301",
+      "excluded": {
+        "Withdraw": 69,
+        "Active": 3,
+        "Reject": 496,
+        "Workshop": 90
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2018.json",
+      "public_review_archive_sha256": "8a0990099702065f3d01065f11435f0a083afbd791a48c1477975ab54b57bcfa",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2018.csv"
+    },
+    {
+      "conference": "iclr2019",
+      "papers": 502,
+      "with_abstract": 502,
+      "with_reviews": 502,
+      "source_url": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2019.json",
+      "upstream_urls": [],
+      "source_sha256": "3e2f1a052192123d9a6f2aaece0e57a3f38f69502e57752c006914d6c878254f",
+      "data_sha256": "822075ecbb479155c8972e3b419aaf9b193b95eb11101d8e88abeb136d54a600",
+      "excluded": {
+        "Reject": 921,
+        "Withdraw": 156
+      },
+      "public_review_archive": "https://github.com/papercopilot/paperlists/blob/9fcfd1234879a8e5630b5116dde411ec143dd763/iclr/iclr2019.json",
+      "public_review_archive_sha256": "3e2f1a052192123d9a6f2aaece0e57a3f38f69502e57752c006914d6c878254f",
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": "https://github.com/hyunjunian/paper-screener/blob/24655fe3cb99c6570cc723050346d9c2b7eb768d/public/conferences/iclr2019.csv"
+    },
+    {
+      "conference": "iclr2015",
+      "papers": 31,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "source_url": "https://github.com/huntercmd/ccf/blob/b9e024e8ee160f5290245936aab391e02e20b082/CCF/ICLR_2015.html",
+      "upstream_urls": [],
+      "source_sha256": "ca2396a496c769bbeeafaea8ffd06257c924c7b4a69914554c3e1c51928e5b98",
+      "data_sha256": "bead3bd7e9afbe0e5a6ca0daee843404802765fc23890e072593ff3b879ebda5",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": null
+    },
+    {
+      "conference": "iclr2016",
+      "papers": 80,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "source_url": "https://github.com/huntercmd/ccf/blob/b9e024e8ee160f5290245936aab391e02e20b082/CCF/ICLR_2016.html",
+      "upstream_urls": [],
+      "source_sha256": "2865b390be94bb7d3fbf93de511417621dadfb116d8e4d1c6259478b5b40c8e2",
+      "data_sha256": "bd4c6725c50990759d6b679e2d9731c6d72ad7079d2752e6fdd3a9688b8b3ef4",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": null
+    },
+    {
+      "conference": "icml2010",
+      "papers": 159,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "source_url": "https://github.com/huntercmd/ccf/blob/b9e024e8ee160f5290245936aab391e02e20b082/CCF/ICML_DBLP_2010.html",
+      "upstream_urls": [],
+      "source_sha256": "b18228fa351cfa425fb7ab532ab799015c733acaeddfe7df8d45b1cb882c8ab2",
+      "data_sha256": "73c001501aa46a3131955027b66da1d01cfb43c2d8146d4661943f80abeb79ba",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": null
+    },
+    {
+      "conference": "icml2011",
+      "papers": 152,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "source_url": "https://github.com/huntercmd/ccf/blob/b9e024e8ee160f5290245936aab391e02e20b082/CCF/ICML_DBLP_2011.html",
+      "upstream_urls": [],
+      "source_sha256": "a30ba2ae67315545f88e3d35631e64a03e170cb1f93c642bfaf541a7daf4d23e",
+      "data_sha256": "2f3ff7b3a093e6bd738618afc85d8f288166a49476c27dedaa8f4c8b5f684382",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": null
+    },
+    {
+      "conference": "icml2012",
+      "papers": 243,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "source_url": "https://github.com/huntercmd/ccf/blob/b9e024e8ee160f5290245936aab391e02e20b082/CCF/ICML_DBLP_2012.html",
+      "upstream_urls": [],
+      "source_sha256": "4ef246115ee9348fafd0f853c0968ff4aab60bfc89c7fb64399cd2b50a642e1a",
+      "data_sha256": "db989e87e73779534b9680bffdc0fe65cbe9228957a29b6f061cc976cb9545ac",
+      "excluded": {},
+      "public_review_archive": null,
+      "public_review_archive_sha256": null,
+      "review_join": "OpenReview forum ID, then unique normalized exact title within the same conference year; no fuzzy matching.",
+      "review_source_url": null
+    }
+  ]
+}

@@ -1,31 +1,44 @@
 # Paper Screener
 
-This is a simple web app to help screen research papers from AI conferences. It allows you to search for keywords in paper titles and abstracts, and load more results as needed.
+Search titles and abstracts from published main-conference research papers. Links retain the arXiv → OpenReview → Google search priority.
 
-## ACL Anthology coverage
+## Available historical coverage
 
-The site includes the following main-conference research papers from the [official ACL Anthology data](https://github.com/acl-org/acl-anthology). Long and short papers are included where published separately.
+| Conference | Available year range | Editions | Papers | With review scores |
+| --- | --- | ---: | ---: | ---: |
+| IJCNLP-AACL | 2020–2025 | 4 | 568 | 0 |
+| ACL | 1979–2026 | 48 | 14,004 | 0 |
+| COLING / LREC-COLING | 1965–2025 | 28 | 8,091 | 0 |
+| CVPR | 2013–2026 | 14 | 22,506 | 0 |
+| EACL | 1983–2026 | 19 | 2,422 | 0 |
+| EMNLP | 1996–2025 | 30 | 10,388 | 0 |
+| ICLR | 2013–2026 | 14 | 16,905 | 16,233 |
+| ICML | 2010–2026 | 17 | 21,106 | 9,545 |
+| NAACL | 2000–2025 | 18 | 4,320 | 0 |
+| NeurIPS | 1987–2025 | 39 | 29,481 | 17,623 |
 
-| Conference | Years | Papers | With abstracts |
-| --- | --- | ---: | ---: |
-| ACL | 2023–2026 | 6,010 | 6,008 |
-| EMNLP | 2023–2025 | 4,124 | 4,093 |
-| NAACL | 2024–2025 | 1,280 | 1,257 |
-| EACL | 2023, 2024, 2026 | 948 | 947 |
-| LREC-COLING / COLING | 2024–2025 | 2,311 | 2,311 |
-| IJCNLP-AACL | 2023, 2025 | 329 | 235 |
-| **Total** | **16 conference-year datasets** | **15,002** | **14,851** |
+The active catalog contains **231 conference-year datasets, 129,791 conference-paper records and 43,401 papers with review scores**. Year ranges contain non-annual events and archive gaps; they are not a claim of complete coverage of every historical meeting. Joint NLP meetings can appear under both participating conferences, so the total is not a unique-publication count.
 
-Findings, workshops, demos, tutorials, industry/student tracks and proceedings front matter are excluded. Missing abstracts remain blank. These records do not publish review ratings, so the site displays `-`. Paper links use the existing Google title search fallback.
+The user-facing [coverage page](public/coverage.html) and [coverage metadata](public/data-coverage.json) list exact years, abstract/review availability and unresolved gaps. In particular, ICML before 2010 and CVPR before 2013 are not imported; ACL's source archive begins in 1979; COLING 1971/1976 and two mixed ACL companion volumes remain unavailable or ambiguous. Unavailable metadata is left blank.
 
-Imported records use JSON to preserve punctuation such as `C#,` and literal `##`, which cannot be represented unambiguously by the older CSV comma escape. Existing conference CSV files and links are unchanged. The provenance manifest at [public/conference-sources.json](public/conference-sources.json) records source URLs, the upstream commit, selected volumes, coverage and checksums.
+## Main-track selection and reviews
 
-To reproduce the import with Python 3.10 or later:
+Historical NLP papers come from a pinned [official ACL Anthology snapshot](https://github.com/acl-org/acl-anthology) and the explicitly reviewed volume selection in `scripts/acl-main-volumes.json`. Primary research, long/short papers and identified main poster volumes are included. Findings, demos, tutorials, student/industry tracks, workshops and front matter are excluded. The [Anthology manifest](public/conference-sources.json) records source URLs, volume IDs, checksums and exclusions.
+
+Recent ICLR, ICML and NeurIPS records are reconciled against accepted-paper snapshots in [AI Conference Paper Lists](https://github.com/chang-xinhai/AI-Conference-Paper-Lists), which identifies the underlying official proceedings/OpenReview sources. NeurIPS Datasets and Benchmarks and ICML Position tracks are excluded where identified. Older ICLR status labels and scores come from [Paper Copilot](https://github.com/papercopilot/paperlists); ICLR 2015–2016 and ICML 2010–2012 use archived oral/poster/proceedings bibliographies from [huntercmd/ccf](https://github.com/huntercmd/ccf). These bibliography snapshots do not provide missing abstracts or reviews. The [ML manifest](public/core-conference-sources.json) documents each input snapshot and exact exclusion counts.
+
+Overall ratings or recommendations are averaged on the original conference/year scale. Scores are not normalized across venues or years. Hover over a score to see the reviewer count, score field and source. Confidence and correctness are never substituted for an overall score. Existing OpenReview-linked aggregates are retained only for a matching forum ID or a unique exact normalized title within the same conference year. Those pre-existing aggregates were not re-fetched from the live API. Missing reviews display `-`, while an actual reviewed zero score displays `0.0`.
+
+## Reproducing imports
+
+Use Python 3.10 or later and checkouts at the pinned revisions named in each script. Cached sources live in `../work/`, outside the checkout. JSON preserves punctuation that the legacy CSV comma escape cannot represent unambiguously.
 
 ```sh
-python3 scripts/import-acl-anthology.py
+python3 scripts/import-acl-anthology.py --source-directory ../work/historical-conferences/acl-anthology
+python3 scripts/import-core-conferences.py --archives ../work/historical-conferences
+python3 scripts/update-conference-catalog.py
 npm test
 npm run build
 ```
 
-The importer pins the upstream commit and caches XML outside the checkout. To import a newer upstream snapshot, supply `--revision <full-commit-sha>`. It validates all downloads before replacing data and regenerates the conference registry.
+The catalog prefers a reconciled JSON dataset over an older CSV of the same conference/year. Historical CSV files remain available as source snapshots but are not fetched by the app when superseded. Loading is bounded to four simultaneous requests, with selected conferences and recent years first. Dataset failures are isolated and reported in the UI.

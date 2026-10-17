@@ -1,0 +1,1388 @@
+{
+  "cvpr2013": {
+    "format": "csv",
+    "papers": 471,
+    "with_abstract": 471,
+    "with_reviews": 0
+  },
+  "cvpr2014": {
+    "format": "csv",
+    "papers": 540,
+    "with_abstract": 540,
+    "with_reviews": 0
+  },
+  "cvpr2015": {
+    "format": "csv",
+    "papers": 602,
+    "with_abstract": 602,
+    "with_reviews": 0
+  },
+  "cvpr2016": {
+    "format": "csv",
+    "papers": 643,
+    "with_abstract": 643,
+    "with_reviews": 0
+  },
+  "cvpr2017": {
+    "format": "csv",
+    "papers": 783,
+    "with_abstract": 783,
+    "with_reviews": 0
+  },
+  "cvpr2018": {
+    "format": "csv",
+    "papers": 979,
+    "with_abstract": 979,
+    "with_reviews": 0
+  },
+  "cvpr2019": {
+    "format": "csv",
+    "papers": 1294,
+    "with_abstract": 1294,
+    "with_reviews": 0
+  },
+  "cvpr2020": {
+    "format": "csv",
+    "papers": 1467,
+    "with_abstract": 1466,
+    "with_reviews": 0
+  },
+  "cvpr2021": {
+    "format": "csv",
+    "papers": 1661,
+    "with_abstract": 1659,
+    "with_reviews": 0
+  },
+  "cvpr2022": {
+    "format": "csv",
+    "papers": 2077,
+    "with_abstract": 2043,
+    "with_reviews": 0
+  },
+  "cvpr2023": {
+    "format": "csv",
+    "papers": 2359,
+    "with_abstract": 2307,
+    "with_reviews": 0
+  },
+  "cvpr2024": {
+    "format": "csv",
+    "papers": 2716,
+    "with_abstract": 2640,
+    "with_reviews": 0
+  },
+  "cvpr2025": {
+    "format": "csv",
+    "papers": 2872,
+    "with_abstract": 2785,
+    "with_reviews": 0
+  },
+  "cvpr2026": {
+    "format": "csv",
+    "papers": 4042,
+    "with_abstract": 4042,
+    "with_reviews": 0
+  },
+  "iclr2013": {
+    "format": "json",
+    "papers": 23,
+    "with_abstract": 23,
+    "with_reviews": 0
+  },
+  "iclr2014": {
+    "format": "json",
+    "papers": 69,
+    "with_abstract": 69,
+    "with_reviews": 0
+  },
+  "iclr2017": {
+    "format": "json",
+    "papers": 198,
+    "with_abstract": 198,
+    "with_reviews": 198
+  },
+  "iclr2018": {
+    "format": "json",
+    "papers": 337,
+    "with_abstract": 337,
+    "with_reviews": 337
+  },
+  "iclr2019": {
+    "format": "json",
+    "papers": 502,
+    "with_abstract": 502,
+    "with_reviews": 502
+  },
+  "iclr2020": {
+    "format": "json",
+    "papers": 824,
+    "with_abstract": 818,
+    "with_reviews": 816
+  },
+  "iclr2021": {
+    "format": "json",
+    "papers": 860,
+    "with_abstract": 860,
+    "with_reviews": 860
+  },
+  "iclr2022": {
+    "format": "json",
+    "papers": 1094,
+    "with_abstract": 1094,
+    "with_reviews": 1094
+  },
+  "iclr2023": {
+    "format": "json",
+    "papers": 1573,
+    "with_abstract": 1573,
+    "with_reviews": 1573
+  },
+  "iclr2024": {
+    "format": "json",
+    "papers": 2260,
+    "with_abstract": 2260,
+    "with_reviews": 2260
+  },
+  "iclr2025": {
+    "format": "json",
+    "papers": 3703,
+    "with_abstract": 3703,
+    "with_reviews": 3703
+  },
+  "iclr2026": {
+    "format": "json",
+    "papers": 5351,
+    "with_abstract": 5351,
+    "with_reviews": 4890
+  },
+  "icml2013": {
+    "format": "csv",
+    "papers": 283,
+    "with_abstract": 283,
+    "with_reviews": 0
+  },
+  "icml2014": {
+    "format": "csv",
+    "papers": 310,
+    "with_abstract": 310,
+    "with_reviews": 0
+  },
+  "icml2015": {
+    "format": "csv",
+    "papers": 270,
+    "with_abstract": 270,
+    "with_reviews": 0
+  },
+  "icml2016": {
+    "format": "csv",
+    "papers": 322,
+    "with_abstract": 322,
+    "with_reviews": 0
+  },
+  "icml2017": {
+    "format": "csv",
+    "papers": 435,
+    "with_abstract": 434,
+    "with_reviews": 0
+  },
+  "icml2018": {
+    "format": "csv",
+    "papers": 623,
+    "with_abstract": 621,
+    "with_reviews": 0
+  },
+  "icml2019": {
+    "format": "csv",
+    "papers": 774,
+    "with_abstract": 773,
+    "with_reviews": 0
+  },
+  "icml2020": {
+    "format": "json",
+    "papers": 1084,
+    "with_abstract": 1084,
+    "with_reviews": 0
+  },
+  "icml2021": {
+    "format": "json",
+    "papers": 1183,
+    "with_abstract": 1183,
+    "with_reviews": 0
+  },
+  "icml2022": {
+    "format": "json",
+    "papers": 1233,
+    "with_abstract": 1233,
+    "with_reviews": 0
+  },
+  "icml2023": {
+    "format": "json",
+    "papers": 1828,
+    "with_abstract": 1828,
+    "with_reviews": 0
+  },
+  "icml2024": {
+    "format": "json",
+    "papers": 2535,
+    "with_abstract": 2535,
+    "with_reviews": 0
+  },
+  "icml2025": {
+    "format": "json",
+    "papers": 3257,
+    "with_abstract": 3257,
+    "with_reviews": 3204
+  },
+  "icml2026": {
+    "format": "json",
+    "papers": 6415,
+    "with_abstract": 6415,
+    "with_reviews": 6341
+  },
+  "nips1987": {
+    "format": "csv",
+    "papers": 90,
+    "with_abstract": 90,
+    "with_reviews": 0
+  },
+  "nips1988": {
+    "format": "csv",
+    "papers": 94,
+    "with_abstract": 94,
+    "with_reviews": 0
+  },
+  "nips1989": {
+    "format": "csv",
+    "papers": 101,
+    "with_abstract": 101,
+    "with_reviews": 0
+  },
+  "nips1990": {
+    "format": "csv",
+    "papers": 143,
+    "with_abstract": 143,
+    "with_reviews": 0
+  },
+  "nips1991": {
+    "format": "csv",
+    "papers": 144,
+    "with_abstract": 144,
+    "with_reviews": 0
+  },
+  "nips1992": {
+    "format": "csv",
+    "papers": 127,
+    "with_abstract": 127,
+    "with_reviews": 0
+  },
+  "nips1993": {
+    "format": "csv",
+    "papers": 158,
+    "with_abstract": 158,
+    "with_reviews": 0
+  },
+  "nips1994": {
+    "format": "csv",
+    "papers": 140,
+    "with_abstract": 140,
+    "with_reviews": 0
+  },
+  "nips1995": {
+    "format": "csv",
+    "papers": 152,
+    "with_abstract": 152,
+    "with_reviews": 0
+  },
+  "nips1996": {
+    "format": "csv",
+    "papers": 152,
+    "with_abstract": 152,
+    "with_reviews": 0
+  },
+  "nips1997": {
+    "format": "csv",
+    "papers": 150,
+    "with_abstract": 150,
+    "with_reviews": 0
+  },
+  "nips1998": {
+    "format": "csv",
+    "papers": 151,
+    "with_abstract": 151,
+    "with_reviews": 0
+  },
+  "nips1999": {
+    "format": "csv",
+    "papers": 150,
+    "with_abstract": 150,
+    "with_reviews": 0
+  },
+  "nips2000": {
+    "format": "csv",
+    "papers": 152,
+    "with_abstract": 152,
+    "with_reviews": 0
+  },
+  "nips2001": {
+    "format": "csv",
+    "papers": 197,
+    "with_abstract": 196,
+    "with_reviews": 0
+  },
+  "nips2002": {
+    "format": "csv",
+    "papers": 207,
+    "with_abstract": 206,
+    "with_reviews": 0
+  },
+  "nips2003": {
+    "format": "csv",
+    "papers": 198,
+    "with_abstract": 198,
+    "with_reviews": 0
+  },
+  "nips2004": {
+    "format": "csv",
+    "papers": 207,
+    "with_abstract": 207,
+    "with_reviews": 0
+  },
+  "nips2005": {
+    "format": "csv",
+    "papers": 207,
+    "with_abstract": 207,
+    "with_reviews": 0
+  },
+  "nips2006": {
+    "format": "csv",
+    "papers": 204,
+    "with_abstract": 204,
+    "with_reviews": 0
+  },
+  "nips2007": {
+    "format": "csv",
+    "papers": 217,
+    "with_abstract": 217,
+    "with_reviews": 0
+  },
+  "nips2008": {
+    "format": "csv",
+    "papers": 250,
+    "with_abstract": 250,
+    "with_reviews": 0
+  },
+  "nips2009": {
+    "format": "csv",
+    "papers": 262,
+    "with_abstract": 262,
+    "with_reviews": 0
+  },
+  "nips2010": {
+    "format": "csv",
+    "papers": 292,
+    "with_abstract": 292,
+    "with_reviews": 0
+  },
+  "nips2011": {
+    "format": "csv",
+    "papers": 306,
+    "with_abstract": 306,
+    "with_reviews": 0
+  },
+  "nips2012": {
+    "format": "csv",
+    "papers": 370,
+    "with_abstract": 370,
+    "with_reviews": 0
+  },
+  "nips2013": {
+    "format": "csv",
+    "papers": 361,
+    "with_abstract": 360,
+    "with_reviews": 0
+  },
+  "nips2014": {
+    "format": "csv",
+    "papers": 411,
+    "with_abstract": 411,
+    "with_reviews": 0
+  },
+  "nips2015": {
+    "format": "csv",
+    "papers": 403,
+    "with_abstract": 403,
+    "with_reviews": 0
+  },
+  "nips2016": {
+    "format": "csv",
+    "papers": 570,
+    "with_abstract": 568,
+    "with_reviews": 0
+  },
+  "nips2017": {
+    "format": "csv",
+    "papers": 691,
+    "with_abstract": 678,
+    "with_reviews": 0
+  },
+  "nips2018": {
+    "format": "csv",
+    "papers": 1009,
+    "with_abstract": 1008,
+    "with_reviews": 0
+  },
+  "nips2019": {
+    "format": "csv",
+    "papers": 1429,
+    "with_abstract": 1427,
+    "with_reviews": 0
+  },
+  "nips2020": {
+    "format": "json",
+    "papers": 1953,
+    "with_abstract": 1904,
+    "with_reviews": 0
+  },
+  "nips2021": {
+    "format": "json",
+    "papers": 2334,
+    "with_abstract": 2334,
+    "with_reviews": 2334
+  },
+  "nips2022": {
+    "format": "json",
+    "papers": 2739,
+    "with_abstract": 2739,
+    "with_reviews": 2671
+  },
+  "nips2023": {
+    "format": "json",
+    "papers": 3266,
+    "with_abstract": 3265,
+    "with_reviews": 3218
+  },
+  "nips2024": {
+    "format": "json",
+    "papers": 4078,
+    "with_abstract": 4078,
+    "with_reviews": 4035
+  },
+  "nips2025": {
+    "format": "json",
+    "papers": 5416,
+    "with_abstract": 5415,
+    "with_reviews": 5365
+  },
+  "aacl2020": {
+    "format": "json",
+    "papers": 92,
+    "with_abstract": 92,
+    "with_reviews": 0
+  },
+  "aacl2022": {
+    "format": "json",
+    "papers": 147,
+    "with_abstract": 147,
+    "with_reviews": 0
+  },
+  "aacl2023": {
+    "format": "json",
+    "papers": 94,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "aacl2025": {
+    "format": "json",
+    "papers": 235,
+    "with_abstract": 235,
+    "with_reviews": 0
+  },
+  "acl1979": {
+    "format": "json",
+    "papers": 28,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1980": {
+    "format": "json",
+    "papers": 44,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1981": {
+    "format": "json",
+    "papers": 36,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1982": {
+    "format": "json",
+    "papers": 39,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1983": {
+    "format": "json",
+    "papers": 25,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1984": {
+    "format": "json",
+    "papers": 116,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1985": {
+    "format": "json",
+    "papers": 40,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1986": {
+    "format": "json",
+    "papers": 41,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1987": {
+    "format": "json",
+    "papers": 34,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1988": {
+    "format": "json",
+    "papers": 35,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1989": {
+    "format": "json",
+    "papers": 34,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1990": {
+    "format": "json",
+    "papers": 39,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1991": {
+    "format": "json",
+    "papers": 56,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1992": {
+    "format": "json",
+    "papers": 54,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1993": {
+    "format": "json",
+    "papers": 47,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1994": {
+    "format": "json",
+    "papers": 52,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1995": {
+    "format": "json",
+    "papers": 56,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1996": {
+    "format": "json",
+    "papers": 58,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1997": {
+    "format": "json",
+    "papers": 73,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1998": {
+    "format": "json",
+    "papers": 250,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl1999": {
+    "format": "json",
+    "papers": 83,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2000": {
+    "format": "json",
+    "papers": 79,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2001": {
+    "format": "json",
+    "papers": 70,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2002": {
+    "format": "json",
+    "papers": 65,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2003": {
+    "format": "json",
+    "papers": 71,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2004": {
+    "format": "json",
+    "papers": 88,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2005": {
+    "format": "json",
+    "papers": 77,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2006": {
+    "format": "json",
+    "papers": 272,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2007": {
+    "format": "json",
+    "papers": 131,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2008": {
+    "format": "json",
+    "papers": 187,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2009": {
+    "format": "json",
+    "papers": 214,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2010": {
+    "format": "json",
+    "papers": 230,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2011": {
+    "format": "json",
+    "papers": 292,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2012": {
+    "format": "json",
+    "papers": 187,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2013": {
+    "format": "json",
+    "papers": 328,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2014": {
+    "format": "json",
+    "papers": 286,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2015": {
+    "format": "json",
+    "papers": 318,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2016": {
+    "format": "json",
+    "papers": 328,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "acl2017": {
+    "format": "json",
+    "papers": 302,
+    "with_abstract": 302,
+    "with_reviews": 0
+  },
+  "acl2018": {
+    "format": "json",
+    "papers": 381,
+    "with_abstract": 381,
+    "with_reviews": 0
+  },
+  "acl2019": {
+    "format": "json",
+    "papers": 660,
+    "with_abstract": 660,
+    "with_reviews": 0
+  },
+  "acl2020": {
+    "format": "json",
+    "papers": 778,
+    "with_abstract": 778,
+    "with_reviews": 0
+  },
+  "acl2021": {
+    "format": "json",
+    "papers": 710,
+    "with_abstract": 710,
+    "with_reviews": 0
+  },
+  "acl2022": {
+    "format": "json",
+    "papers": 700,
+    "with_abstract": 700,
+    "with_reviews": 0
+  },
+  "acl2023": {
+    "format": "json",
+    "papers": 1075,
+    "with_abstract": 1075,
+    "with_reviews": 0
+  },
+  "acl2024": {
+    "format": "json",
+    "papers": 940,
+    "with_abstract": 939,
+    "with_reviews": 0
+  },
+  "acl2025": {
+    "format": "json",
+    "papers": 1699,
+    "with_abstract": 1699,
+    "with_reviews": 0
+  },
+  "acl2026": {
+    "format": "json",
+    "papers": 2296,
+    "with_abstract": 2295,
+    "with_reviews": 0
+  },
+  "coling1965": {
+    "format": "json",
+    "papers": 24,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1967": {
+    "format": "json",
+    "papers": 37,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1969": {
+    "format": "json",
+    "papers": 96,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1973": {
+    "format": "json",
+    "papers": 62,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1980": {
+    "format": "json",
+    "papers": 92,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "coling1982": {
+    "format": "json",
+    "papers": 142,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "coling1984": {
+    "format": "json",
+    "papers": 116,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1986": {
+    "format": "json",
+    "papers": 156,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1988": {
+    "format": "json",
+    "papers": 168,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1990": {
+    "format": "json",
+    "papers": 203,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "coling1992": {
+    "format": "json",
+    "papers": 214,
+    "with_abstract": 2,
+    "with_reviews": 0
+  },
+  "coling1994": {
+    "format": "json",
+    "papers": 212,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1996": {
+    "format": "json",
+    "papers": 214,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling1998": {
+    "format": "json",
+    "papers": 246,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2000": {
+    "format": "json",
+    "papers": 175,
+    "with_abstract": 2,
+    "with_reviews": 0
+  },
+  "coling2002": {
+    "format": "json",
+    "papers": 170,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2004": {
+    "format": "json",
+    "papers": 204,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "coling2006": {
+    "format": "json",
+    "papers": 272,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2008": {
+    "format": "json",
+    "papers": 180,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2010": {
+    "format": "json",
+    "papers": 333,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2012": {
+    "format": "json",
+    "papers": 332,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2014": {
+    "format": "json",
+    "papers": 221,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "coling2016": {
+    "format": "json",
+    "papers": 337,
+    "with_abstract": 337,
+    "with_reviews": 0
+  },
+  "coling2018": {
+    "format": "json",
+    "papers": 330,
+    "with_abstract": 330,
+    "with_reviews": 0
+  },
+  "coling2020": {
+    "format": "json",
+    "papers": 612,
+    "with_abstract": 612,
+    "with_reviews": 0
+  },
+  "coling2022": {
+    "format": "json",
+    "papers": 632,
+    "with_abstract": 630,
+    "with_reviews": 0
+  },
+  "coling2025": {
+    "format": "json",
+    "papers": 757,
+    "with_abstract": 757,
+    "with_reviews": 0
+  },
+  "eacl1983": {
+    "format": "json",
+    "papers": 32,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "eacl1985": {
+    "format": "json",
+    "papers": 41,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl1987": {
+    "format": "json",
+    "papers": 50,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "eacl1989": {
+    "format": "json",
+    "papers": 42,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl1991": {
+    "format": "json",
+    "papers": 55,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "eacl1993": {
+    "format": "json",
+    "papers": 70,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "eacl1995": {
+    "format": "json",
+    "papers": 45,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl1997": {
+    "format": "json",
+    "papers": 73,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl1999": {
+    "format": "json",
+    "papers": 52,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl2003": {
+    "format": "json",
+    "papers": 88,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl2006": {
+    "format": "json",
+    "papers": 52,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl2009": {
+    "format": "json",
+    "papers": 100,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl2012": {
+    "format": "json",
+    "papers": 85,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl2014": {
+    "format": "json",
+    "papers": 124,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "eacl2017": {
+    "format": "json",
+    "papers": 239,
+    "with_abstract": 239,
+    "with_reviews": 0
+  },
+  "eacl2021": {
+    "format": "json",
+    "papers": 326,
+    "with_abstract": 326,
+    "with_reviews": 0
+  },
+  "eacl2023": {
+    "format": "json",
+    "papers": 280,
+    "with_abstract": 280,
+    "with_reviews": 0
+  },
+  "eacl2024": {
+    "format": "json",
+    "papers": 223,
+    "with_abstract": 223,
+    "with_reviews": 0
+  },
+  "eacl2026": {
+    "format": "json",
+    "papers": 445,
+    "with_abstract": 444,
+    "with_reviews": 0
+  },
+  "emnlp1996": {
+    "format": "json",
+    "papers": 14,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp1997": {
+    "format": "json",
+    "papers": 23,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp1998": {
+    "format": "json",
+    "papers": 12,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp1999": {
+    "format": "json",
+    "papers": 35,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2000": {
+    "format": "json",
+    "papers": 27,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2001": {
+    "format": "json",
+    "papers": 21,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2002": {
+    "format": "json",
+    "papers": 41,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2003": {
+    "format": "json",
+    "papers": 28,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2004": {
+    "format": "json",
+    "papers": 56,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2005": {
+    "format": "json",
+    "papers": 127,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2006": {
+    "format": "json",
+    "papers": 73,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2007": {
+    "format": "json",
+    "papers": 131,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2008": {
+    "format": "json",
+    "papers": 114,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2009": {
+    "format": "json",
+    "papers": 163,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2010": {
+    "format": "json",
+    "papers": 125,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2011": {
+    "format": "json",
+    "papers": 149,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2012": {
+    "format": "json",
+    "papers": 139,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2013": {
+    "format": "json",
+    "papers": 205,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2014": {
+    "format": "json",
+    "papers": 226,
+    "with_abstract": 1,
+    "with_reviews": 0
+  },
+  "emnlp2015": {
+    "format": "json",
+    "papers": 312,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2016": {
+    "format": "json",
+    "papers": 264,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "emnlp2017": {
+    "format": "json",
+    "papers": 323,
+    "with_abstract": 323,
+    "with_reviews": 0
+  },
+  "emnlp2018": {
+    "format": "json",
+    "papers": 549,
+    "with_abstract": 549,
+    "with_reviews": 0
+  },
+  "emnlp2019": {
+    "format": "json",
+    "papers": 681,
+    "with_abstract": 681,
+    "with_reviews": 0
+  },
+  "emnlp2020": {
+    "format": "json",
+    "papers": 751,
+    "with_abstract": 751,
+    "with_reviews": 0
+  },
+  "emnlp2021": {
+    "format": "json",
+    "papers": 847,
+    "with_abstract": 847,
+    "with_reviews": 0
+  },
+  "emnlp2022": {
+    "format": "json",
+    "papers": 828,
+    "with_abstract": 826,
+    "with_reviews": 0
+  },
+  "emnlp2023": {
+    "format": "json",
+    "papers": 1047,
+    "with_abstract": 1047,
+    "with_reviews": 0
+  },
+  "emnlp2024": {
+    "format": "json",
+    "papers": 1268,
+    "with_abstract": 1237,
+    "with_reviews": 0
+  },
+  "emnlp2025": {
+    "format": "json",
+    "papers": 1809,
+    "with_abstract": 1809,
+    "with_reviews": 0
+  },
+  "iclr2015": {
+    "format": "json",
+    "papers": 31,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "iclr2016": {
+    "format": "json",
+    "papers": 80,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "icml2010": {
+    "format": "json",
+    "papers": 159,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "icml2011": {
+    "format": "json",
+    "papers": 152,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "icml2012": {
+    "format": "json",
+    "papers": 243,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "lreccoling2024": {
+    "format": "json",
+    "papers": 1554,
+    "with_abstract": 1554,
+    "with_reviews": 0
+  },
+  "naacl2000": {
+    "format": "json",
+    "papers": 43,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2001": {
+    "format": "json",
+    "papers": 31,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2003": {
+    "format": "json",
+    "papers": 75,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2004": {
+    "format": "json",
+    "papers": 83,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2006": {
+    "format": "json",
+    "papers": 113,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2007": {
+    "format": "json",
+    "papers": 127,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2009": {
+    "format": "json",
+    "papers": 146,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2010": {
+    "format": "json",
+    "papers": 146,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2012": {
+    "format": "json",
+    "papers": 97,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2013": {
+    "format": "json",
+    "papers": 140,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2015": {
+    "format": "json",
+    "papers": 186,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2016": {
+    "format": "json",
+    "papers": 181,
+    "with_abstract": 0,
+    "with_reviews": 0
+  },
+  "naacl2018": {
+    "format": "json",
+    "papers": 330,
+    "with_abstract": 330,
+    "with_reviews": 0
+  },
+  "naacl2019": {
+    "format": "json",
+    "papers": 423,
+    "with_abstract": 423,
+    "with_reviews": 0
+  },
+  "naacl2021": {
+    "format": "json",
+    "papers": 477,
+    "with_abstract": 477,
+    "with_reviews": 0
+  },
+  "naacl2022": {
+    "format": "json",
+    "papers": 442,
+    "with_abstract": 442,
+    "with_reviews": 0
+  },
+  "naacl2024": {
+    "format": "json",
+    "papers": 562,
+    "with_abstract": 562,
+    "with_reviews": 0
+  },
+  "naacl2025": {
+    "format": "json",
+    "papers": 718,
+    "with_abstract": 695,
+    "with_reviews": 0
+  }
+}

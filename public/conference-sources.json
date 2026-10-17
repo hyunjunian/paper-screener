@@ -1,194 +1,2807 @@
 {
   "source": "https://github.com/acl-org/acl-anthology",
   "revision": "fea0d77e817370d7e09417470426f2a929001b8b",
-  "imported_at": "2026-10-17T07:39:00.789226+00:00",
-  "scope": "Main-conference long/short/main research papers; no Findings, workshops, demos, tutorials, industry, student tracks, or front matter.",
+  "imported_at": "2026-10-17T07:59:28.718611+00:00",
+  "scope": "Published primary research and long/short/poster volumes in the reviewed historical volume selection; no Findings, workshops, demos, tutorials, student or industry tracks.",
+  "coverage_notes": [
+    "Archive coverage is not a claim that every historical meeting has archived proceedings. ACL research proceedings in this source start in 1979.",
+    "COLING 1971 and 1976 are absent from this source snapshot.",
+    "The mixed ACL 2003 and ACL 2007 demo/student/poster companion volumes are excluded because paper-level track labels are unavailable.",
+    "Joint meetings appear under each participating conference, including ACL-COLING and ACL-EACL. Counts across conferences are not unique-publication counts.",
+    "Review scores are not published in the Anthology metadata; missing abstracts and reviews remain absent."
+  ],
   "datasets": [
     {
-      "conference": "acl2023",
-      "papers": 1075,
-      "with_abstract": 1075,
+      "conference": "aacl2020",
+      "papers": 92,
+      "with_abstract": 92,
+      "with_reviews": 0,
       "volumes": [
-        "2023.acl-long",
-        "2023.acl-short"
+        "2020.aacl-main"
       ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.acl.xml",
-      "source_sha256": "4a02e87cb81ec2cc192c6a3e3739246ebd3cfca696abb456e06dc9d2ee214ef6",
-      "data_sha256": "0132526762538139bb7da461b2139a1640500c82114a85819d465cb181c48946"
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.aacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.aacl.xml",
+          "sha256": "2ae20aca8469a3e1a5b287809902ada283b17d376da0b943360c717821dfe52a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "d18f7b399827662cb49517424f08098e03e721af23cbb32f965ee9c36e77e04a"
     },
     {
-      "conference": "acl2024",
-      "papers": 940,
-      "with_abstract": 939,
+      "conference": "aacl2022",
+      "papers": 147,
+      "with_abstract": 147,
+      "with_reviews": 0,
       "volumes": [
-        "2024.acl-long",
-        "2024.acl-short"
+        "2022.aacl-main",
+        "2022.aacl-short"
       ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.acl.xml",
-      "source_sha256": "337a57b75135d5d9e5634973031917b8f8cc91da6958c8017c99c18c7f203df7",
-      "data_sha256": "c38400422428e3951b970dd3090ea1c9b33dc0d62509ab515899229b7069a4db"
-    },
-    {
-      "conference": "acl2025",
-      "papers": 1699,
-      "with_abstract": 1699,
-      "volumes": [
-        "2025.acl-long",
-        "2025.acl-short"
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.aacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.aacl.xml",
+          "sha256": "51ea781f10eefbd4875d92722fac700a528b770cc60ea49d56de13ee2da11f2c"
+        }
       ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.acl.xml",
-      "source_sha256": "a3e95156af2aae0a6ec39e4c2b34068f9083b2985a76bb75654866c52cf7d7e5",
-      "data_sha256": "59edcc1294cbea453854dfec6741f8c9bbbd9afa3f3894719fa9e4daf262d177"
-    },
-    {
-      "conference": "acl2026",
-      "papers": 2296,
-      "with_abstract": 2295,
-      "volumes": [
-        "2026.acl-long",
-        "2026.acl-short"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.acl.xml",
-      "source_sha256": "f2f798cc4fe127e8c0b6c5384ee8d20a7433ef05b0a949f69e749ed8c96bd941",
-      "data_sha256": "2d6469efc5009d588b0c150d27fe993ae0b0f6b8cf3aa0afc2862e6d3ebe9dbb"
-    },
-    {
-      "conference": "emnlp2023",
-      "papers": 1047,
-      "with_abstract": 1047,
-      "volumes": [
-        "2023.emnlp-main"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.emnlp.xml",
-      "source_sha256": "8384f02e89afa11e5a7d758841701ba189af7ecd7cb88c000e3ff1984e1a1546",
-      "data_sha256": "898eadec1630ef832f37c2dd29ec3ef1da8fca07b947fbffb900b196a2f3fdd2"
-    },
-    {
-      "conference": "emnlp2024",
-      "papers": 1268,
-      "with_abstract": 1237,
-      "volumes": [
-        "2024.emnlp-main"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.emnlp.xml",
-      "source_sha256": "8b9eba26273b436befeee1b63bf9778c128400d9e08629cf3b6039de0061f795",
-      "data_sha256": "3b199c720bffe8cc996a01814cfbe15ab134524a567411422c40ffce726a613c"
-    },
-    {
-      "conference": "emnlp2025",
-      "papers": 1809,
-      "with_abstract": 1809,
-      "volumes": [
-        "2025.emnlp-main"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.emnlp.xml",
-      "source_sha256": "fe11a982254623764b52baf2a324eae1fc84bab49ecf62456fa3732f00b4f011",
-      "data_sha256": "1f78d861688ee07e86f8dd7c2d33c31bba22bfce0c71614eaf84c0433da2556a"
-    },
-    {
-      "conference": "naacl2024",
-      "papers": 562,
-      "with_abstract": 562,
-      "volumes": [
-        "2024.naacl-long",
-        "2024.naacl-short"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.naacl.xml",
-      "source_sha256": "963ea7c81fd0a9cf46b8059e47d2950dcba717e284fcbc98a813f8a5c01996f1",
-      "data_sha256": "f5fc761ac2fb275d663a2a6cb9ac8f8e159fe8d920e5b78a1023094e108d4260"
-    },
-    {
-      "conference": "naacl2025",
-      "papers": 718,
-      "with_abstract": 695,
-      "volumes": [
-        "2025.naacl-long",
-        "2025.naacl-short"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.naacl.xml",
-      "source_sha256": "45ace4c6bd1dd4edfa53745898c75ee87c3b7b8202d0e1e207026c2517bad72a",
-      "data_sha256": "815dc25d9225fa31f9b33cd461d14169bd0b4707e47b085fbb30f6e8dfd551d4"
-    },
-    {
-      "conference": "eacl2023",
-      "papers": 280,
-      "with_abstract": 280,
-      "volumes": [
-        "2023.eacl-main"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.eacl.xml",
-      "source_sha256": "ff3bfc9820e249c450ba565997d6083850e2b9fd147a48e0c5151f6307da3edc",
-      "data_sha256": "a514f720d1f1e97982a3439a22548e106a599d73ee43c5bf53dc77335d57591c"
-    },
-    {
-      "conference": "eacl2024",
-      "papers": 223,
-      "with_abstract": 223,
-      "volumes": [
-        "2024.eacl-long",
-        "2024.eacl-short"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.eacl.xml",
-      "source_sha256": "e9c8b8132414f0ba391caaf61d19af99bebc03f063bc688f2082c3bb337057e2",
-      "data_sha256": "b0b0d404f7a9cc66bfc81049e6e2c870e0800e90069346fb65d6cf9889775268"
-    },
-    {
-      "conference": "eacl2026",
-      "papers": 445,
-      "with_abstract": 444,
-      "volumes": [
-        "2026.eacl-long",
-        "2026.eacl-short"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.eacl.xml",
-      "source_sha256": "c02713b3d41e4e313eb466990105d983c84b338ca72d5150e15b78b683e4be4a",
-      "data_sha256": "2bbc84a3c3155707404a6a7d2491801426d1b151967ffd564eb4aa2d15c347f4"
-    },
-    {
-      "conference": "lreccoling2024",
-      "papers": 1554,
-      "with_abstract": 1554,
-      "volumes": [
-        "2024.lrec-main"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.lrec.xml",
-      "source_sha256": "e3353b511e5074118e0b02b4d4f99cd50af6c4ee41e0ad6249387dbd1f826ca5",
-      "data_sha256": "e541e72e326289945681d06d5bcd383cfb8b5892df4e6b26f15682b7c8fd3976"
-    },
-    {
-      "conference": "coling2025",
-      "papers": 757,
-      "with_abstract": 757,
-      "volumes": [
-        "2025.coling-main"
-      ],
-      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.coling.xml",
-      "source_sha256": "3efb9f59e073834463fab9f1748f937d3d4699983b3f9494ac21f1623c368e7e",
-      "data_sha256": "b1622fe3c35841f13a39a0cad1adda1a5b6c4888445d59cc3cb0dbf8d08218f0"
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "76efa86dbe334eff6254c2d2239f5682f407ca23308c4855a6568ab27ef43bbe"
     },
     {
       "conference": "aacl2023",
       "papers": 94,
       "with_abstract": 0,
+      "with_reviews": 0,
       "volumes": [
         "2023.ijcnlp-main",
         "2023.ijcnlp-short"
       ],
       "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.ijcnlp.xml",
-      "source_sha256": "0edb0ab99fc584512ba9b1ac2c39aab4405b42121917871387092bce2de861b5",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.ijcnlp.xml",
+          "sha256": "0edb0ab99fc584512ba9b1ac2c39aab4405b42121917871387092bce2de861b5"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
       "data_sha256": "30e00d8dc2ab8f4643fafefe7a63335f074da4b3662a023bed1f77b27139d30e"
     },
     {
       "conference": "aacl2025",
       "papers": 235,
       "with_abstract": 235,
+      "with_reviews": 0,
       "volumes": [
         "2025.ijcnlp-long",
         "2025.ijcnlp-short"
       ],
       "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.ijcnlp.xml",
-      "source_sha256": "177ac5a591fe19460d3cba7eee924bb90333716890f7eb8041836b0c7ff17e8d",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.ijcnlp.xml",
+          "sha256": "177ac5a591fe19460d3cba7eee924bb90333716890f7eb8041836b0c7ff17e8d"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
       "data_sha256": "837901d5fb01d58dc9a3373fe46ec027416d3dd6e9f545aefe2a6f33ef54cc01"
+    },
+    {
+      "conference": "acl1979",
+      "papers": 28,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P79-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P79.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P79.xml",
+          "sha256": "9190c65964573b8a9047fc74082ac467f43a067c70a5fdf384a9d2a5b5d09593"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "635918b80f0b3d7dbc7719d08ee6a8cbe381311145755b421ac2eefbdce419ec"
+    },
+    {
+      "conference": "acl1980",
+      "papers": 44,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P80-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P80.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P80.xml",
+          "sha256": "32c93b1c8184c39fbe8c9418e48ce9441d384a2dff5978050f932a4e98c33465"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "70799cdcbc7ec85e7b06ef0d5ed24aa3c103d60b0f0382c6a56ab77c48227a09"
+    },
+    {
+      "conference": "acl1981",
+      "papers": 36,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P81-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P81.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P81.xml",
+          "sha256": "429562a32b71ee71ca06f99af323236c8e79fc876931157af19658e8fc0caab2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "86c294e1b143e912756d60f038bc726faaefa473ceabf934341db4dedf5d2160"
+    },
+    {
+      "conference": "acl1982",
+      "papers": 39,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P82-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P82.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P82.xml",
+          "sha256": "73b2ae908ddc8032da2d8df3e9c03be2a0f9ffa9aa3cd54f611f78b61968192b"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "60d26dc964ae74af84c2d6387a6cd5e3c9e4ff9dce7a6cee26bcc96a179600b1"
+    },
+    {
+      "conference": "acl1983",
+      "papers": 25,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P83-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P83.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P83.xml",
+          "sha256": "d7ea3e980a86033b6949627f69de781d4fad8c6c89a121df171e792166f851d7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "86b99403a9ca19e9dec6edaff5e89e1d638f9fa88da8190c1927250ab36e169a"
+    },
+    {
+      "conference": "acl1984",
+      "papers": 116,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P84-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P84.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P84.xml",
+          "sha256": "f230bd66176684c459224d1787efd7c31e6525b13fe886663236128a6fc27ad4"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "8429b22310bcf9e70854399a6e22612cc6156526529ebf3a063452ebf307c18a"
+    },
+    {
+      "conference": "acl1985",
+      "papers": 40,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P85-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P85.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P85.xml",
+          "sha256": "17bac744d4ff8be7da4032c2d299c7b3569b2b9274bac4de8071ee68fb7164ed"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "d20a178d30754494016809db1755e00103301d994c77b138573f0f404c4302cb"
+    },
+    {
+      "conference": "acl1986",
+      "papers": 41,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P86-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P86.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P86.xml",
+          "sha256": "3a4b5af16803d2d07f6585df457aa99e3434837388601af92c83894615c4a86a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "05b6a3608cfe6ab627c01420138bb0dcba8d8f76cdd91260550465d31d51487c"
+    },
+    {
+      "conference": "acl1987",
+      "papers": 34,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P87-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P87.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P87.xml",
+          "sha256": "f6e1f01d1760f011e422932a3764e3556eac72de8cf0f910d279c3d422331f91"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "83c9b4ea2b1126501b2d01aebbbae35e629ea30bb42577224589829d92703fa9"
+    },
+    {
+      "conference": "acl1988",
+      "papers": 35,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P88-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P88.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P88.xml",
+          "sha256": "7b4cbf187d79f75699a5ff5310bcdda530381fc1c49347ede5da2408cc094913"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "80c6a0cfa8dc0c0350bac50b035b7af4cc7a281822643127c5dcc67718c3a05b"
+    },
+    {
+      "conference": "acl1989",
+      "papers": 34,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P89-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P89.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P89.xml",
+          "sha256": "b06bda997321c6c11a879136db79820a27674fe8ab6616248149ea26f2254a1b"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "b59535b62f81ba084d794f63667b06f1a60f11186b0d7fe8b5f5d72565c1cc3e"
+    },
+    {
+      "conference": "acl1990",
+      "papers": 39,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P90-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P90.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P90.xml",
+          "sha256": "dbf0ca4dc7794cc5ebdda6dde5d69b868eea15050a923b395ad9974ff28c583e"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "3cc6079df589091bc3a05d402f73a11080a1194107067b3c140571f1d19e6769"
+    },
+    {
+      "conference": "acl1991",
+      "papers": 56,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P91-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P91.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P91.xml",
+          "sha256": "16a91275d05e8414a18d22e4c5024a40e4b5ed4780214d9c1b816d1a2494253a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "408c3e39bbaff9ea2365d59781b206b509b04b550b0c6b35ab26afb3f09572b7"
+    },
+    {
+      "conference": "acl1992",
+      "papers": 54,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P92-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P92.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P92.xml",
+          "sha256": "4e97dc917b0db32cdbe42197715d4776ac71db3774ceeb4083f09605d6470b25"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "5d631351b1f72e97a006e71e9195eeee1ae341f924deb18fa0c0d7b5474c9cf9"
+    },
+    {
+      "conference": "acl1993",
+      "papers": 47,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P93-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P93.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P93.xml",
+          "sha256": "3adda603b93cb74fa741129352a805f75d588d52b2e2c07b40421e0e75c884d1"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "73ee3a3f285fbcfe652cdcf83c0755c2b22a3852e294a02677f3b865dab91f1c"
+    },
+    {
+      "conference": "acl1994",
+      "papers": 52,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P94-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P94.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P94.xml",
+          "sha256": "5756b53564e4e96fe0af005c19cce40dad41690dc77ea849467559c2496dd7a9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "beea8845e863a0236f98c8fb498c8eea1d79638875894b675d1989c1536e0eae"
+    },
+    {
+      "conference": "acl1995",
+      "papers": 56,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P95-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P95.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P95.xml",
+          "sha256": "277258857f66c03bf4dac7f2ebcac681bac9b66100bd98e7892337c7b236efd5"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "4d0190d69abbff6942c4f4d30165780b4d08fab936bd5c9f5d9f97c31255948e"
+    },
+    {
+      "conference": "acl1996",
+      "papers": 58,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P96-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P96.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P96.xml",
+          "sha256": "12c671cec524a31e93045d44168fdee0a4109a0c05597dea31332e924c6537c6"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "35cfbbf2fe0594b82fd890747f837b33caa16a84255d2552fa03655df258b32f"
+    },
+    {
+      "conference": "acl1997",
+      "papers": 73,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P97-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P97.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P97.xml",
+          "sha256": "7b93028e8a6569db350bac9494ccf782d336cf9959e3e233d1d00ae1f87fb3aa"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "a22645b0c004d976293ead1ca5f607147fbcef91ac6ee0b40f79c2ad8b33770a"
+    },
+    {
+      "conference": "acl1998",
+      "papers": 250,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P98-1",
+        "P98-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P98.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P98.xml",
+          "sha256": "daaa00dd8a751557bd5db77934796e14a38ce827e51376b2235f56d039a3e7d5"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "4b635ca0f51c62bbd3f640460c7f6c06d1e28f683d3bfa44e69626ebd2ba3052"
+    },
+    {
+      "conference": "acl1999",
+      "papers": 83,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P99-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P99.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P99.xml",
+          "sha256": "b71da6aeb2c368166ec53d32456aaec8762cf4eaa4df06e1d64c19ea4184b6f9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "70403c9fa9cdbbe1e7a95207ffb32153aec25ec47fb3780f14a0aef9d6e0ddeb"
+    },
+    {
+      "conference": "acl2000",
+      "papers": 79,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P00-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P00.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P00.xml",
+          "sha256": "777b41f7bb1e82df94f0604cac652b82e41078bc5f7c340b03eceab1ce028b76"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "c6bd38ba12eb5940504c66ecc3878cb7ee44d0e3fb6c46d48bdaa1aa862c50a8"
+    },
+    {
+      "conference": "acl2001",
+      "papers": 70,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P01-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P01.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P01.xml",
+          "sha256": "e688074bc21d0aa379a1007ee67ed248d86640065f8ea8c87c624cb020c05230"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "dedc48986df18bdffe32242e08f8995447eee58e23a876a0fa202406b180ec18"
+    },
+    {
+      "conference": "acl2002",
+      "papers": 65,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P02-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P02.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P02.xml",
+          "sha256": "c0a19f72cd2479f72ce89826984f3ba70bdb67023ba4d3701a710be39cbf2884"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "4dbca8d10eab7d233c03402ac1bd89e190b10432f51d4cf0f029879a6176c6da"
+    },
+    {
+      "conference": "acl2003",
+      "papers": 71,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P03-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P03.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P03.xml",
+          "sha256": "c3aa3f2fbc407c9357173a0104eaf39048126417a427050eec9df6bf656f1147"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "4d4617b1bf19560102c5d4c28a2a49e3f9bed5e3b368736fa3f98d67d1e2fce4"
+    },
+    {
+      "conference": "acl2004",
+      "papers": 88,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P04-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P04.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P04.xml",
+          "sha256": "960da31bc1d1ea9e72ad65b6c349024cb2c73320813bdd0a7f1f0a52bf8478a1"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "02e00a7394e58de1c3c5dfb06404863f31c6880c6cc45bf956c6412608558c0e"
+    },
+    {
+      "conference": "acl2005",
+      "papers": 77,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P05-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P05.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P05.xml",
+          "sha256": "be142511cece3140599f6b2ea35d2ee8d357846ef365cdc04a7c0938cc789653"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "f308a086fdd02f9846e6ea2b375f2ba07d3792e513f296b9181160292b94c225"
+    },
+    {
+      "conference": "acl2006",
+      "papers": 272,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P06-1",
+        "P06-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P06.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P06.xml",
+          "sha256": "74a106ec60fa3df7b26fa3ae1dca343a9630d8ff4e885b4865d7344b8d8e314c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "5c64635023a99769cc7c11754e0c85a2d4d2d7100a719e46a171fa1dc0f8478d"
+    },
+    {
+      "conference": "acl2007",
+      "papers": 131,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P07-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P07.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P07.xml",
+          "sha256": "4206fd1b4819719ffefd8ddaba140ff2de3e0badc3234b5a328a2b5907b05337"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2016cf758bae379023e20bdc27bb465fa350de59589b4bd954b71c615fbe53bf"
+    },
+    {
+      "conference": "acl2008",
+      "papers": 187,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P08-1",
+        "P08-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P08.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P08.xml",
+          "sha256": "37553f683f47363c9de908d845985e084021da72d46cdc8d7892d3750e85b507"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "4430991fff50735fd0336374972119c2461a98a7f39bd098e2d98d93a5b69b91"
+    },
+    {
+      "conference": "acl2009",
+      "papers": 214,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P09-1",
+        "P09-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P09.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P09.xml",
+          "sha256": "d374aebe357363e5bfb56178a4c0a3899b56761c2f5c7872272b80a4df22078c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "6af0ab3c011ea386f8453d20bd4f0a6e8fb7aaaa2c3f874b985b1bd5c0038f04"
+    },
+    {
+      "conference": "acl2010",
+      "papers": 230,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P10-1",
+        "P10-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P10.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P10.xml",
+          "sha256": "565e1b9dc38764a9257615a4c1f6138bf1b5a2cc09c78ee02c8aac365ecb1f7a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2b0df7be8cf5e6d193af79a874fed0b7af8d41e78999d929b92a843b8411e34c"
+    },
+    {
+      "conference": "acl2011",
+      "papers": 292,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P11-1",
+        "P11-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P11.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P11.xml",
+          "sha256": "fb3f5d9ddecac573c86189f61bf36f91f8e22eab20d1aef485574ad42d6397ef"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "1c28212f4431ef72256b41483b95e7d940a3826ba6148ebef994247ba1a3d3a0"
+    },
+    {
+      "conference": "acl2012",
+      "papers": 187,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P12-1",
+        "P12-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P12.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P12.xml",
+          "sha256": "4e9d59aecb1d2333b3aa4c45ca8be9a0bfa107777585c867341c6b629c7805c0"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "6f07930bfc864521f053323ccc2c6f9d76110e13ad0dbed5cb6f86126a4dbf9a"
+    },
+    {
+      "conference": "acl2013",
+      "papers": 328,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P13-1",
+        "P13-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P13.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P13.xml",
+          "sha256": "3d6ee3eb83f4d286859c73717b04613bdf9eaabf86bfb768f860c0d079456a50"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "1ea9ec9df9ce735e4b842dfa636c5e4a94a9874e3b776c2ad8eabbe68e13abfc"
+    },
+    {
+      "conference": "acl2014",
+      "papers": 286,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P14-1",
+        "P14-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P14.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P14.xml",
+          "sha256": "91299536b7d620b94b35a948cc219c45c086b46444c0d3dc0f1667a38ae93350"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "8fc488341b50e2d39b0f302c18ddf7b672c1a571a7c0ff6bd9aa65744436321b"
+    },
+    {
+      "conference": "acl2015",
+      "papers": 318,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P15-1",
+        "P15-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P15.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P15.xml",
+          "sha256": "0ed86d9eafd28df39c55c09c3e10320d2cf58c3aeef52188061027eaa9f8400a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "f876a8146e5113039b8a6507f1017c44af7aa1808e8c9caec802cd99c766fb71"
+    },
+    {
+      "conference": "acl2016",
+      "papers": 328,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P16-1",
+        "P16-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P16.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P16.xml",
+          "sha256": "cc34c1b864facebc75dd06560aa55ae65be0a4760c61f7183136d62f175983b6"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "250da10cd16e42dee02ff94198a1f34bf2a7ec5188ba658455a327ddee467ab9"
+    },
+    {
+      "conference": "acl2017",
+      "papers": 302,
+      "with_abstract": 302,
+      "with_reviews": 0,
+      "volumes": [
+        "P17-1",
+        "P17-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P17.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P17.xml",
+          "sha256": "cf96f256e949a95f1048e36756b275412799d0aff89abb9e9361d2ccc9080023"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "81ae0b9bbc254f6803664a9a585b08aef1389543b3c93464bcb9e8087703dc92"
+    },
+    {
+      "conference": "acl2018",
+      "papers": 381,
+      "with_abstract": 381,
+      "with_reviews": 0,
+      "volumes": [
+        "P18-1",
+        "P18-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P18.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P18.xml",
+          "sha256": "d5e21d76317c4cadd2d01068213d7b23fc0e613f58d85c6ded926f6460411277"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "fdc07ad3e409134cef9a898d1d166221bca2a9fdba8d6c0ae3b2825a828bc5f8"
+    },
+    {
+      "conference": "acl2019",
+      "papers": 660,
+      "with_abstract": 660,
+      "with_reviews": 0,
+      "volumes": [
+        "P19-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P19.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P19.xml",
+          "sha256": "593de53c97c59d3518f3a12db184b7fd713b9078e41492d80239a7b788ddd842"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "7b5f6f70d5a3834d8cc728735baa87bf0bdfd3a7efd2a53297ff7aaeb8dc9d50"
+    },
+    {
+      "conference": "acl2020",
+      "papers": 778,
+      "with_abstract": 778,
+      "with_reviews": 0,
+      "volumes": [
+        "2020.acl-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.acl.xml",
+          "sha256": "bf1af8c932bb12c3059451d9be8aaa7c6288399acba2bc8d57a7ef18a5c16b58"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "ff29830c3796ae0408bf25885e20d539d1c82377671db3a8e70788ccf52e8169"
+    },
+    {
+      "conference": "acl2021",
+      "papers": 710,
+      "with_abstract": 710,
+      "with_reviews": 0,
+      "volumes": [
+        "2021.acl-long",
+        "2021.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.acl.xml",
+          "sha256": "aab63285b65b0310f9c7bdacdf6cfb1f8592493ef920c770380213829c89041c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "d26b2b8861662da1687c648c915bde731752e38d1a9ae523672b3c77597a3efd"
+    },
+    {
+      "conference": "acl2022",
+      "papers": 700,
+      "with_abstract": 700,
+      "with_reviews": 0,
+      "volumes": [
+        "2022.acl-long",
+        "2022.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.acl.xml",
+          "sha256": "3dd0b5a0f5a4e10517a42127272d7116792e677cdb1f11df97f55fded91b8a3f"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "d998e4e8f7fc5e976333dc4f68bb6917b17eab12a232b0b740ad378284a4661f"
+    },
+    {
+      "conference": "acl2023",
+      "papers": 1075,
+      "with_abstract": 1075,
+      "with_reviews": 0,
+      "volumes": [
+        "2023.acl-long",
+        "2023.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.acl.xml",
+          "sha256": "4a02e87cb81ec2cc192c6a3e3739246ebd3cfca696abb456e06dc9d2ee214ef6"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "0132526762538139bb7da461b2139a1640500c82114a85819d465cb181c48946"
+    },
+    {
+      "conference": "acl2024",
+      "papers": 940,
+      "with_abstract": 939,
+      "with_reviews": 0,
+      "volumes": [
+        "2024.acl-long",
+        "2024.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.acl.xml",
+          "sha256": "337a57b75135d5d9e5634973031917b8f8cc91da6958c8017c99c18c7f203df7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "c38400422428e3951b970dd3090ea1c9b33dc0d62509ab515899229b7069a4db"
+    },
+    {
+      "conference": "acl2025",
+      "papers": 1699,
+      "with_abstract": 1699,
+      "with_reviews": 0,
+      "volumes": [
+        "2025.acl-long",
+        "2025.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.acl.xml",
+          "sha256": "a3e95156af2aae0a6ec39e4c2b34068f9083b2985a76bb75654866c52cf7d7e5"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "59edcc1294cbea453854dfec6741f8c9bbbd9afa3f3894719fa9e4daf262d177"
+    },
+    {
+      "conference": "acl2026",
+      "papers": 2296,
+      "with_abstract": 2295,
+      "with_reviews": 0,
+      "volumes": [
+        "2026.acl-long",
+        "2026.acl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.acl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.acl.xml",
+          "sha256": "f2f798cc4fe127e8c0b6c5384ee8d20a7433ef05b0a949f69e749ed8c96bd941"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2d6469efc5009d588b0c150d27fe993ae0b0f6b8cf3aa0afc2862e6d3ebe9dbb"
+    },
+    {
+      "conference": "coling1965",
+      "papers": 24,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C65-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C65.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C65.xml",
+          "sha256": "572791610e20b7c6045d984d968e73a18a144bcb5c3da64112001c781826808e"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "ff21d5e4e3bbb3f54a0d53fda599429a374b436338b8a89e4323deaf180b9b87"
+    },
+    {
+      "conference": "coling1967",
+      "papers": 37,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C67-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C67.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C67.xml",
+          "sha256": "f5dd0dc41202f55cf1718d86db2fb999827d8c760ff80c33d813683c2f6b277a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "293e42342a57023e527354381403ce3ecdbd4ece302dc3f680c3d916d1d181fc"
+    },
+    {
+      "conference": "coling1969",
+      "papers": 96,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C69-1",
+        "C69-2",
+        "C69-3",
+        "C69-4",
+        "C69-5",
+        "C69-6",
+        "C69-7",
+        "C69-8",
+        "C69-9",
+        "C69-10",
+        "C69-11",
+        "C69-12",
+        "C69-13",
+        "C69-14",
+        "C69-15",
+        "C69-16",
+        "C69-17",
+        "C69-18",
+        "C69-19",
+        "C69-20",
+        "C69-21",
+        "C69-22",
+        "C69-23",
+        "C69-24",
+        "C69-25",
+        "C69-26",
+        "C69-27",
+        "C69-28",
+        "C69-29",
+        "C69-30",
+        "C69-31",
+        "C69-32",
+        "C69-33",
+        "C69-34",
+        "C69-35",
+        "C69-36",
+        "C69-37",
+        "C69-38",
+        "C69-39",
+        "C69-40",
+        "C69-41",
+        "C69-42",
+        "C69-43",
+        "C69-44",
+        "C69-45",
+        "C69-46",
+        "C69-47",
+        "C69-48",
+        "C69-49",
+        "C69-50",
+        "C69-51",
+        "C69-52",
+        "C69-53",
+        "C69-54",
+        "C69-55",
+        "C69-56",
+        "C69-57",
+        "C69-58",
+        "C69-59",
+        "C69-60",
+        "C69-61",
+        "C69-62",
+        "C69-63",
+        "C69-64",
+        "C69-65",
+        "C69-66",
+        "C69-67",
+        "C69-68",
+        "C69-69",
+        "C69-70",
+        "C69-71",
+        "C69-72",
+        "C69-73",
+        "C69-74",
+        "C69-75",
+        "C69-76"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C69.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C69.xml",
+          "sha256": "776cc05c48177c84a59ea11bc225f5f689a18d9017aa0d25dacc5a9434354e54"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "C69-7001"
+      ],
+      "data_sha256": "945c6d8bd2b4481723ed914201387243478b2232d72026416ac6234fca2372a6"
+    },
+    {
+      "conference": "coling1973",
+      "papers": 62,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C73-1",
+        "C73-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C73.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C73.xml",
+          "sha256": "f7ec6e8f219626cc6faf9776325cd47c047b983ef39334870b7852724c666265"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "d00056a5ff84929779d65889ca0675281ea8c59867b1ade67fe3244ad697a546"
+    },
+    {
+      "conference": "coling1980",
+      "papers": 92,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "C80-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C80.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C80.xml",
+          "sha256": "61cae048d904203323392f47339b9dbcbff0fcf87f60cc3c3452a6499d991ca2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "C80-1.93"
+      ],
+      "data_sha256": "9b949a87f0baf2b34360ef6041ca1f743bc90a89eaa4d11756b43bcd978b28c1"
+    },
+    {
+      "conference": "coling1982",
+      "papers": 142,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "C82-1",
+        "C82-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C82.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C82.xml",
+          "sha256": "b1f5a944e1e6468f47102c080eca3e7d6225e9d61f97f128b1a76d80a2b7df8a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "C82-1.69",
+        "C82-2.1"
+      ],
+      "data_sha256": "684827d050953a7ba51f537c5e0aa67219fcf1d6037c1261bd1858ca871c63d2"
+    },
+    {
+      "conference": "coling1984",
+      "papers": 116,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P84-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P84.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P84.xml",
+          "sha256": "f230bd66176684c459224d1787efd7c31e6525b13fe886663236128a6fc27ad4"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "8429b22310bcf9e70854399a6e22612cc6156526529ebf3a063452ebf307c18a"
+    },
+    {
+      "conference": "coling1986",
+      "papers": 156,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C86-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C86.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C86.xml",
+          "sha256": "c1ec1846b7a908ef2b0af2239d7e010e47ad5d61958bc56ac9bc6251fbc80eee"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "90d8f5f0e11eb60119af259665b7a0e9571d7c79dfcfa8802908562961bedf62"
+    },
+    {
+      "conference": "coling1988",
+      "papers": 168,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C88-1",
+        "C88-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C88.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C88.xml",
+          "sha256": "2f800e9d45b6081b6d029c6685ecab7d049541d73efab46f4d669892abf6235f"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "038b63cd0301f318bf1c00a28d5dc5b58a8a00dcaa6906acec173908dd2133ca"
+    },
+    {
+      "conference": "coling1990",
+      "papers": 203,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "C90-1",
+        "C90-2",
+        "C90-3"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C90.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C90.xml",
+          "sha256": "f15a47ca100ab0078d08082a32b81183a286946855684fa887082f7c83ee75b4"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "C90-1.1"
+      ],
+      "data_sha256": "603f98fb7c9d10e782b0fd11185d7df2cb878d61a28605649f646d7e3d028e63"
+    },
+    {
+      "conference": "coling1992",
+      "papers": 214,
+      "with_abstract": 2,
+      "with_reviews": 0,
+      "volumes": [
+        "C92-1",
+        "C92-2",
+        "C92-3",
+        "C92-4"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C92.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C92.xml",
+          "sha256": "e972e9ea60dd3c67f6ea215f639293329728d55bed18e6a6fc507207f059b599"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "C92-1.1",
+        "C92-1.6",
+        "C92-1.7"
+      ],
+      "data_sha256": "2e01c59cb1556e5478060dcd6267871c5d1a6a58f3dcca5ba17d55a827678e4a"
+    },
+    {
+      "conference": "coling1994",
+      "papers": 212,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C94-1",
+        "C94-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C94.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C94.xml",
+          "sha256": "9ef0385eb509e84f2013fc83add33d9ba6c1ce1dfdc1c4db8f27e54929d560b8"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "411f51da6fead31ade6df1d479488e6f7cee1ba4eda76b7a296e28e9363d2c29"
+    },
+    {
+      "conference": "coling1996",
+      "papers": 214,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C96-1",
+        "C96-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C96.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C96.xml",
+          "sha256": "c2d310f218be588930994e1dcd30dc33421393cda9eb6fb2bf38e75b24af01c8"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "C96-2.214"
+      ],
+      "data_sha256": "256954661f88492bb4b1c55cb233fd1bc22789f69530d111d2fcd85f46886c8f"
+    },
+    {
+      "conference": "coling1998",
+      "papers": 246,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C98-1",
+        "C98-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C98.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C98.xml",
+          "sha256": "e69eafe60eb0e0697ebb70ea6ed814b8fd4715230a71c39d306919f3bc921c6c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "f609d5d2956e3f643c6f5f18246e338e8963978df3035253254450ec5836186f"
+    },
+    {
+      "conference": "coling2000",
+      "papers": 175,
+      "with_abstract": 2,
+      "with_reviews": 0,
+      "volumes": [
+        "C00-1",
+        "C00-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C00.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C00.xml",
+          "sha256": "d441022cc41177a83eea36ede615cc264aab59c46dbdffb4f1766f130e6efc19"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "82348cf9f68e8151b04a0d467a8373374090311b56fc5f7ec58a51901413bfde"
+    },
+    {
+      "conference": "coling2002",
+      "papers": 170,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C02-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C02.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C02.xml",
+          "sha256": "edf87f1dedb2c779d1377aa1822c4ad4381655d5d207ad20db8b0cbbdbbbcb39"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "13eff3542e1d4135c3b8a14984f20ae23568c353e3f6235080553cfef8917802"
+    },
+    {
+      "conference": "coling2004",
+      "papers": 204,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "C04-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C04.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C04.xml",
+          "sha256": "3cadabe30cebea13737caf3f57659e91e10d5de9f7c1a963324b604df087037e"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "5ca7132040ee7a230cdfea408e21132133ab4207531abeaecfc23945f00b4f0c"
+    },
+    {
+      "conference": "coling2006",
+      "papers": 272,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P06-1",
+        "P06-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P06.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P06.xml",
+          "sha256": "74a106ec60fa3df7b26fa3ae1dca343a9630d8ff4e885b4865d7344b8d8e314c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "5c64635023a99769cc7c11754e0c85a2d4d2d7100a719e46a171fa1dc0f8478d"
+    },
+    {
+      "conference": "coling2008",
+      "papers": 180,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C08-1",
+        "C08-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C08.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C08.xml",
+          "sha256": "b69e776eb9f6baa8f82252cada9dfbd9f0cb0bd79c17e215c07122b08c4617e7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "828a761a04519887149f8f16863880dec4869b4ee74968d8af58b86baec84a4b"
+    },
+    {
+      "conference": "coling2010",
+      "papers": 333,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C10-1",
+        "C10-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C10.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C10.xml",
+          "sha256": "f3076dde31f753d551814d1d60408b89f4ad682bafbef0247a83ecf1d93bbf22"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "316bc9e892fe80b98c6a49ada12d9752952d5ded6a03b82db6f65cac6d22a9a5"
+    },
+    {
+      "conference": "coling2012",
+      "papers": 332,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C12-1",
+        "C12-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C12.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C12.xml",
+          "sha256": "a0d7e5034689e2fd629d4fdfe1ebdae84d92fccf378e057db67d3335e7bd37ad"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "f9221261292c36c3e420536edfcb5e5333fe557cf0fb95862605f9d99773fbed"
+    },
+    {
+      "conference": "coling2014",
+      "papers": 221,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "C14-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C14.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C14.xml",
+          "sha256": "54ca852783c41954b4f5d8dc90817ea69ca641bdc645b217bbf93908c0e2a6bc"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "0ba13022a6a7567f1f94a5a2c4d4cf3fd9e8a427ac7e9b6f69f92a3e2f209907"
+    },
+    {
+      "conference": "coling2016",
+      "papers": 337,
+      "with_abstract": 337,
+      "with_reviews": 0,
+      "volumes": [
+        "C16-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C16.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C16.xml",
+          "sha256": "9da0e3497f5a97314ff982bab11c583e83d996831ef8e7e4757f9988ae07b402"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "c377c9df6f7c737623743cbf501606adda4c4238ec1a0f8a87770c48b50eb920"
+    },
+    {
+      "conference": "coling2018",
+      "papers": 330,
+      "with_abstract": 330,
+      "with_reviews": 0,
+      "volumes": [
+        "C18-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C18.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/C18.xml",
+          "sha256": "01c2240662aee6d0cbc89e9ad433f005bb26654721a0702d0da4565d678eeed9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "e93f480e54eeb0fb5877d8c8a9691846ccb6600507f80f2a309d5b8ae277dd6c"
+    },
+    {
+      "conference": "coling2020",
+      "papers": 612,
+      "with_abstract": 612,
+      "with_reviews": 0,
+      "volumes": [
+        "2020.coling-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.coling.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.coling.xml",
+          "sha256": "9340d590969c6bf035ad91ca840f2251d71d24bbd88a0e51c90e24aab8b5d17a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "c0c7a6c512e2de07312133d9bcae2bb58f73264e5d742b323627370d67033b0a"
+    },
+    {
+      "conference": "coling2022",
+      "papers": 632,
+      "with_abstract": 630,
+      "with_reviews": 0,
+      "volumes": [
+        "2022.coling-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.coling.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.coling.xml",
+          "sha256": "db03c34f73d5ccc9e466ced503a575707ea6a0beab2a05e641949887075e14fc"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "a70d09de5f601705710c73b777043b308fa35d4a43db8b72f2841e93cbe0edbf"
+    },
+    {
+      "conference": "coling2025",
+      "papers": 757,
+      "with_abstract": 757,
+      "with_reviews": 0,
+      "volumes": [
+        "2025.coling-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.coling.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.coling.xml",
+          "sha256": "3efb9f59e073834463fab9f1748f937d3d4699983b3f9494ac21f1623c368e7e"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "b1622fe3c35841f13a39a0cad1adda1a5b6c4888445d59cc3cb0dbf8d08218f0"
+    },
+    {
+      "conference": "eacl1983",
+      "papers": 32,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "E83-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E83.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E83.xml",
+          "sha256": "762e5e36fb3523456257f5f20a155660caaa3a57f6bd4ee3b4742852f78f8130"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "e5ff621f102e92264577f508a8f6a7c3c3c1760ea111f859eca293d082daf993"
+    },
+    {
+      "conference": "eacl1985",
+      "papers": 41,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E85-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E85.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E85.xml",
+          "sha256": "1e29b79b12ea65e55bfed1528e4355dc6a7336a819cc1f22b991541859cc3041"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "36b73cbd2b538d50c1ecb4b2d84dccb7adaa886c0ae1bf920d9891f97e5f4fc9"
+    },
+    {
+      "conference": "eacl1987",
+      "papers": 50,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "E87-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E87.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E87.xml",
+          "sha256": "c657e734c61191ac4259af4c99db9416b67610cbdb4ed57ab352b63d6a8aaf5c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "8b5850825e8ab189bef54af9f69a59a134adcdcb76412842e69da397df303cf0"
+    },
+    {
+      "conference": "eacl1989",
+      "papers": 42,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E89-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E89.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E89.xml",
+          "sha256": "565004da9bb8e4e920470e7d9732d7bc8e2097f619f5732f4b07d2cb46c8b5ea"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "3f883f18edc0aba9a0a89be47a99bdb9c4f894bffa51e9ed7aac95aece2befba"
+    },
+    {
+      "conference": "eacl1991",
+      "papers": 55,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "E91-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E91.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E91.xml",
+          "sha256": "8fabb5e68b3936718a28009e4e80f7247a4274f6b1492175e1f8d945d6286869"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "5373ec4bf7b9355c6a38dc37f6b3dc8a44a8dfbafe7edfc972d0a7c8ad60cbd7"
+    },
+    {
+      "conference": "eacl1993",
+      "papers": 70,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "E93-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E93.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E93.xml",
+          "sha256": "66e12cde9a555fdd6956ee86771008d987d9a11b0e7f7834f115f860c04874d9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "13f386878e476624aad4e7bf8860d9087f802ed48484611ae25699418d06e4ad"
+    },
+    {
+      "conference": "eacl1995",
+      "papers": 45,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E95-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E95.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E95.xml",
+          "sha256": "a2f433fe2424f0ef203c6db2389964ac24f31ea45ff1513398e348c651626fb7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "778405e756ceea13ab7cfae4a8e832d91f9b8140ef28a1028c17e2d018d69a25"
+    },
+    {
+      "conference": "eacl1997",
+      "papers": 73,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "P97-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P97.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/P97.xml",
+          "sha256": "7b93028e8a6569db350bac9494ccf782d336cf9959e3e233d1d00ae1f87fb3aa"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "a22645b0c004d976293ead1ca5f607147fbcef91ac6ee0b40f79c2ad8b33770a"
+    },
+    {
+      "conference": "eacl1999",
+      "papers": 52,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E99-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E99.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E99.xml",
+          "sha256": "df0616d83168844fc10ffe937de4f14fd716f4801b533379dae5fb03936099f2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "a2f0687f6482a5a2e9fad019e1abd2ead862bbbe78852759119a2808a983549a"
+    },
+    {
+      "conference": "eacl2003",
+      "papers": 88,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E03-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E03.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E03.xml",
+          "sha256": "cb7e9e4531a5ad97d19db2c2398c54a8b2a09c76dc997fa9b260b1bf9f0fa1a7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "c0db0df6b9c440952f5c13916a16bdf87d2724c62983adf91591f46fa9996afa"
+    },
+    {
+      "conference": "eacl2006",
+      "papers": 52,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E06-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E06.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E06.xml",
+          "sha256": "523cadb9ca69ddb1e43f8677fd7a7d2f0a96fd1878437aa774f7505b45a5baec"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "358aaa23253f1926ed1110a52701b3ff8d1dc66e90b2fb99263859efac850db4"
+    },
+    {
+      "conference": "eacl2009",
+      "papers": 100,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E09-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E09.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E09.xml",
+          "sha256": "8f59a341d52ac6d47827d6b4a67184a385e6a2fc5e7d11a3a23070d35abdd092"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "dbdccd2c59b7228940adf039b1220d018a28dcf01e5683bdad2a623368cb149a"
+    },
+    {
+      "conference": "eacl2012",
+      "papers": 85,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E12-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E12.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E12.xml",
+          "sha256": "467dda31875a68ceb21e214c931f776b0363910fbf04ac59294ffa1bc2d2c1f7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "213c4861cdf5e8eed6b540d41eb7cf73ab7545d1930007537a30accbcd75207f"
+    },
+    {
+      "conference": "eacl2014",
+      "papers": 124,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "E14-1",
+        "E14-4"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E14.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E14.xml",
+          "sha256": "9cdf0a8a8dd9aa0038f9b66bb2ce98dd0c15f63390580998b03eb0c9b780a7bc"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "b7cb924de094c824668a924102f301b896aacaa2eab64fbfcac1da9cb31f6de8"
+    },
+    {
+      "conference": "eacl2017",
+      "papers": 239,
+      "with_abstract": 239,
+      "with_reviews": 0,
+      "volumes": [
+        "E17-1",
+        "E17-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E17.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/E17.xml",
+          "sha256": "9114202a0151fe7777fd3a59c384b04172276d5bd26c2d43cdcf4434e6e62303"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "52bf5036094173eb2f160cb9de6852fb13d047bee74a4b8cba64eec06166abe6"
+    },
+    {
+      "conference": "eacl2021",
+      "papers": 326,
+      "with_abstract": 326,
+      "with_reviews": 0,
+      "volumes": [
+        "2021.eacl-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.eacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.eacl.xml",
+          "sha256": "19daee1ad942922658126a8ab3c74f8bb734c518524b3209d77d5b036f2039a9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "8aee7b376f402abc334ded7cbaa9a738e7d4a89efa13038532a684295b756001"
+    },
+    {
+      "conference": "eacl2023",
+      "papers": 280,
+      "with_abstract": 280,
+      "with_reviews": 0,
+      "volumes": [
+        "2023.eacl-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.eacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.eacl.xml",
+          "sha256": "ff3bfc9820e249c450ba565997d6083850e2b9fd147a48e0c5151f6307da3edc"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "a514f720d1f1e97982a3439a22548e106a599d73ee43c5bf53dc77335d57591c"
+    },
+    {
+      "conference": "eacl2024",
+      "papers": 223,
+      "with_abstract": 223,
+      "with_reviews": 0,
+      "volumes": [
+        "2024.eacl-long",
+        "2024.eacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.eacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.eacl.xml",
+          "sha256": "e9c8b8132414f0ba391caaf61d19af99bebc03f063bc688f2082c3bb337057e2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "b0b0d404f7a9cc66bfc81049e6e2c870e0800e90069346fb65d6cf9889775268"
+    },
+    {
+      "conference": "eacl2026",
+      "papers": 445,
+      "with_abstract": 444,
+      "with_reviews": 0,
+      "volumes": [
+        "2026.eacl-long",
+        "2026.eacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.eacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2026.eacl.xml",
+          "sha256": "c02713b3d41e4e313eb466990105d983c84b338ca72d5150e15b78b683e4be4a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2bbc84a3c3155707404a6a7d2491801426d1b151967ffd564eb4aa2d15c347f4"
+    },
+    {
+      "conference": "emnlp1996",
+      "papers": 14,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W96-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W96.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W96.xml",
+          "sha256": "ad55fe0f5a7c887a6b6c0879ec8f5b93681e556ae51871a7657489acf18571dc"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "13cd0ecec06f90785c89afe4084c799b63d671ffe188aba9f46c072f5ab3914e"
+    },
+    {
+      "conference": "emnlp1997",
+      "papers": 23,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W97-3"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W97.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W97.xml",
+          "sha256": "c13662242c8bd22ea7746d54cab4566b849da338d0f54ce1248ba2a692a01513"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "12398245a854057d88703b3f0220c5f711b935af6718a7fcd03ebdb38929534c"
+    },
+    {
+      "conference": "emnlp1998",
+      "papers": 12,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W98-15"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W98.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W98.xml",
+          "sha256": "c35d95cdfb1f09114b72aa06bc48abda316d94f7d66098b78ceaf51847b022be"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "W98-15.13"
+      ],
+      "data_sha256": "caf87d2315b925e8a23678d7de4d5546c29445bbf46c39ede061c7d2ba03b246"
+    },
+    {
+      "conference": "emnlp1999",
+      "papers": 35,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W99-6"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W99.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W99.xml",
+          "sha256": "f802d9377d1480c0b813d6889d426dc9dca8f15dc2a54d2ea17774701d4aaa98"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "84e171d1c7070576dee8028c8565852b0404587f6ff9e20326ff6759043c07ce"
+    },
+    {
+      "conference": "emnlp2000",
+      "papers": 27,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W00-13"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W00.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W00.xml",
+          "sha256": "146f09ae072ff5e94c4447c081536ebde2d9d8c497625f3e68558c5787bde82b"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "W00-13.28"
+      ],
+      "data_sha256": "f77e1c649c24ce7ace051368f2c3e90278d0c11c5028468c344f3ec928ed3524"
+    },
+    {
+      "conference": "emnlp2001",
+      "papers": 21,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W01-5"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W01.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W01.xml",
+          "sha256": "023d1a7d3173fcfd7d6baa10c2a2cf98e39945a2b02546ea60a0f9e6e320c2a4"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "81de62a5e1bfc26a33db288e3cad238912ca334a471682ae472484d2af6620fe"
+    },
+    {
+      "conference": "emnlp2002",
+      "papers": 41,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W02-10"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W02.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W02.xml",
+          "sha256": "d31e66258c8636f28803d20ab0785e0187c3f24528fec62325abaead5a6f3481"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "cdf4c35cea1b107eefa5cc280813616ce72a40e649ceabdc1b8332ce4421f379"
+    },
+    {
+      "conference": "emnlp2003",
+      "papers": 28,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W03-10"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W03.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W03.xml",
+          "sha256": "2d988de18f93b018d2cb9800958d46028f1c3e1a66b763eac035e3629e4b8f55"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "21011c25a8e7faca1fadc0d656d1448b3f970d4d6d2c9fab18dd0fe483d54bbc"
+    },
+    {
+      "conference": "emnlp2004",
+      "papers": 56,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W04-32"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W04.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W04.xml",
+          "sha256": "706295e343d7d58bc83be21ad1e94b3d90007cbbb3fab5878423f03c171a589d"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [
+        "W04-32.57"
+      ],
+      "data_sha256": "c5c4689d514f9b9c0d6f852aa9dc6cde748210377342de5a626f48139b4d8863"
+    },
+    {
+      "conference": "emnlp2005",
+      "papers": 127,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "H05-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/H05.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/H05.xml",
+          "sha256": "4b33baa0012787c2f2446c8926adcafd4483a6420eb59be55f5c75d20c5266c7"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "eb776c60fb3cceb6385c3c1ee6e5027fa3716615698e43f72659c8c6d4a99d2d"
+    },
+    {
+      "conference": "emnlp2006",
+      "papers": 73,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "W06-16"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W06.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/W06.xml",
+          "sha256": "a81512c9d50975a239d338500cc477f8685819ad0cf88a534f50e00fd27194ec"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "dc4de8126143a9441fa5613b7ea1c749a355673b44a5ed7e2ae308a2444524e8"
+    },
+    {
+      "conference": "emnlp2007",
+      "papers": 131,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D07-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D07.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D07.xml",
+          "sha256": "c9baf9d20d4745cb5bf894e3e68bf5db76c63996b5be13fbdb8f39db92c07bc2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "f508264b11aeadf4b37586706ed38cc08557d9bef17e259cf7335b21ae3929cc"
+    },
+    {
+      "conference": "emnlp2008",
+      "papers": 114,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D08-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D08.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D08.xml",
+          "sha256": "9992d4bf808130c6e7f8938ff5d183451269554c67297c4ddbe9adbcbb8b4b45"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "70ea904fa61d32dc931ab1acd93c4d50d8ef622541a735301ddddc8c097ef229"
+    },
+    {
+      "conference": "emnlp2009",
+      "papers": 163,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D09-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D09.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D09.xml",
+          "sha256": "fa5fe26c25050f30573fcde6bd3448767ba3bcd8220b31ec00725eaf59449d50"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "3d9e97737285643d64fa7e9f847440f6c172126aa83bacc5ea0ff5f1d2dd995a"
+    },
+    {
+      "conference": "emnlp2010",
+      "papers": 125,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D10-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D10.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D10.xml",
+          "sha256": "139fae6a091ec42d238c3f3e4038a9a11e730ba0b875343f74dd5905b76b48e2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "0f35cfff6b2660b931c589bc33f7a7dc181c0a04af08532c25e717cd0c8af656"
+    },
+    {
+      "conference": "emnlp2011",
+      "papers": 149,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D11-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D11.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D11.xml",
+          "sha256": "4f5809cbe3d4a00aa30752d85be94ab2c12df96438cc6e59a3a9c3650c1cc450"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "7e074d224c0f6aacf8dbb39578ebf10bc7e721709c84799c6dcf21148d26a86d"
+    },
+    {
+      "conference": "emnlp2012",
+      "papers": 139,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D12-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D12.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D12.xml",
+          "sha256": "72686bfc9b6f5c89dbda85d1493875babb91a659e3d22afd9693c9426dd1de99"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "02c24f7727d5cc0418e3bfaca514b1eb82d992747fc3f1558b962c054175ff59"
+    },
+    {
+      "conference": "emnlp2013",
+      "papers": 205,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D13-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D13.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D13.xml",
+          "sha256": "a5a98d2752111e9828e40492162171a16ebbd281ae2bbdb0f28ecdd3930d4c08"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "4f88a2a0762afa6aa27ecdf7b01aa2fea0f9a08b06da817c99c3db2a10eb3e1a"
+    },
+    {
+      "conference": "emnlp2014",
+      "papers": 226,
+      "with_abstract": 1,
+      "with_reviews": 0,
+      "volumes": [
+        "D14-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D14.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D14.xml",
+          "sha256": "8e0776148cb82ba1052258d7644dc7b415fc7e2e3d1874de9ac63e9321818046"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2605d1855a906f36a064a50c11569c3f694e4f2a99352d2e4fa842b2dcd631f9"
+    },
+    {
+      "conference": "emnlp2015",
+      "papers": 312,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D15-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D15.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D15.xml",
+          "sha256": "5c680fbb951c3870eba301c47972c8dacf921e5344e256053f35f90a52681b6c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2e0269ebb9e179c4c6c50e06da6780c4c60003f75df6d87f29586af64e3fee76"
+    },
+    {
+      "conference": "emnlp2016",
+      "papers": 264,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "D16-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D16.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D16.xml",
+          "sha256": "098b178db3ff93f73413a84292bdfe1380162e2f9459c8dc23eb9e5d208de904"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "e1f3038d15109f65dfe68b4692c8a6cb563054a598fadbaba9ea5a3b36724145"
+    },
+    {
+      "conference": "emnlp2017",
+      "papers": 323,
+      "with_abstract": 323,
+      "with_reviews": 0,
+      "volumes": [
+        "D17-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D17.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D17.xml",
+          "sha256": "76dead30fb330ed19e33dd96bb754b8210c69f1e280b22056a1401c45dfa6a60"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "5b9671637a1d33d945c38079347dabbb6e76f227ec51f92be815a7e5adbd01af"
+    },
+    {
+      "conference": "emnlp2018",
+      "papers": 549,
+      "with_abstract": 549,
+      "with_reviews": 0,
+      "volumes": [
+        "D18-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D18.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D18.xml",
+          "sha256": "7504bc187165eb6f6a374e5d1f5f70498f4c2e4347226d0e52bd6fd04b4c0f88"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "118eeed592a70c23c0d16fe90eb99c11abe4a91d0fa596d529734a90b77d8bf2"
+    },
+    {
+      "conference": "emnlp2019",
+      "papers": 681,
+      "with_abstract": 681,
+      "with_reviews": 0,
+      "volumes": [
+        "D19-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D19.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/D19.xml",
+          "sha256": "f372d1b939d2662b0f97c812bdf665d7b1f55e0617a10f311ec29845ae8be274"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "c1d693c5408cc3bea5977ff0d7f5d948295c9ed715c301bce519d3dfcc59d80e"
+    },
+    {
+      "conference": "emnlp2020",
+      "papers": 751,
+      "with_abstract": 751,
+      "with_reviews": 0,
+      "volumes": [
+        "2020.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.emnlp.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2020.emnlp.xml",
+          "sha256": "cd389bb3adc2f1eec36c85f0cb29716e49e2c8119732949e8201c4e832482484"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "71396e89bf424af60a63b6facd699a778893ce0b427832df4b01aa7cc4bf31b9"
+    },
+    {
+      "conference": "emnlp2021",
+      "papers": 847,
+      "with_abstract": 847,
+      "with_reviews": 0,
+      "volumes": [
+        "2021.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.emnlp.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.emnlp.xml",
+          "sha256": "a4617041549f0e9c28903a35cadd8f9627fae0c77f49551bb9810d80d6662101"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "27a708864ff9bf1ca0336b207b3e7c94b6745bc5e33ad5068b134dd50daba17f"
+    },
+    {
+      "conference": "emnlp2022",
+      "papers": 828,
+      "with_abstract": 826,
+      "with_reviews": 0,
+      "volumes": [
+        "2022.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.emnlp.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.emnlp.xml",
+          "sha256": "067981a15c35ee15aff48b2eaa610d57679fddc7240c731cf949e5e91d5dcf42"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "cbd104fae69634404d04f555e628c8115081c9f4b12836ebc6b26f5a65fc43d7"
+    },
+    {
+      "conference": "emnlp2023",
+      "papers": 1047,
+      "with_abstract": 1047,
+      "with_reviews": 0,
+      "volumes": [
+        "2023.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.emnlp.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2023.emnlp.xml",
+          "sha256": "8384f02e89afa11e5a7d758841701ba189af7ecd7cb88c000e3ff1984e1a1546"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "898eadec1630ef832f37c2dd29ec3ef1da8fca07b947fbffb900b196a2f3fdd2"
+    },
+    {
+      "conference": "emnlp2024",
+      "papers": 1268,
+      "with_abstract": 1237,
+      "with_reviews": 0,
+      "volumes": [
+        "2024.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.emnlp.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.emnlp.xml",
+          "sha256": "8b9eba26273b436befeee1b63bf9778c128400d9e08629cf3b6039de0061f795"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "3b199c720bffe8cc996a01814cfbe15ab134524a567411422c40ffce726a613c"
+    },
+    {
+      "conference": "emnlp2025",
+      "papers": 1809,
+      "with_abstract": 1809,
+      "with_reviews": 0,
+      "volumes": [
+        "2025.emnlp-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.emnlp.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.emnlp.xml",
+          "sha256": "fe11a982254623764b52baf2a324eae1fc84bab49ecf62456fa3732f00b4f011"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "1f78d861688ee07e86f8dd7c2d33c31bba22bfce0c71614eaf84c0433da2556a"
+    },
+    {
+      "conference": "lreccoling2024",
+      "papers": 1554,
+      "with_abstract": 1554,
+      "with_reviews": 0,
+      "volumes": [
+        "2024.lrec-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.lrec.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.lrec.xml",
+          "sha256": "e3353b511e5074118e0b02b4d4f99cd50af6c4ee41e0ad6249387dbd1f826ca5"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "e541e72e326289945681d06d5bcd383cfb8b5892df4e6b26f15682b7c8fd3976"
+    },
+    {
+      "conference": "naacl2000",
+      "papers": 43,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "A00-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/A00.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/A00.xml",
+          "sha256": "6350874f70cb156770233e67cbab0e5caec93f962d968873c7b8c2e335cfe3a9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "9c3a5c6f9a29306c45724cf6c0c0c360e9492d16613c4e6f3448142e475a1914"
+    },
+    {
+      "conference": "naacl2001",
+      "papers": 31,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N01-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N01.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N01.xml",
+          "sha256": "74318e4f8fc55afcbd458600e8b6bec3c61deb38a8f414424a90bc820ff73ed4"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "0ae0336ac0f53531c00759560ce1c0a4d66970607666df88b36f9493c914e0f3"
+    },
+    {
+      "conference": "naacl2003",
+      "papers": 75,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N03-1",
+        "N03-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N03.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N03.xml",
+          "sha256": "7b2ff302d9d7552ad91142b343ad0136f5bb8e558a082a1fb602b2e18e2e2dd6"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "47ca37464ee937174ff12a809d885f6f39bf46dd21129f81ef64027a43b59346"
+    },
+    {
+      "conference": "naacl2004",
+      "papers": 83,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N04-1",
+        "N04-4"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N04.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N04.xml",
+          "sha256": "c7e594bbea9c939fc367bebd094d5b713a37fe1076834449fdec40e9b5b5d72c"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "2f43accac8672fd9fdd58a95094b0dd718f787b51f0fe656c20aad719c934146"
+    },
+    {
+      "conference": "naacl2006",
+      "papers": 113,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N06-1",
+        "N06-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N06.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N06.xml",
+          "sha256": "f9c60b045565181bf998341bcb66b15a2a4c6e41d8745b25f177627c1f58d82d"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "1dff7edd25036e8142d4c4748f80ddb4ba4c004362d69fce2bf38d366b1b2910"
+    },
+    {
+      "conference": "naacl2007",
+      "papers": 127,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N07-1",
+        "N07-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N07.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N07.xml",
+          "sha256": "07a5bef507b4b23510090c6831cb6690c863a8278611dbaca2b8de3ed38414c9"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "778a3c363e0664db9c744af12ffbd57478e0f346f18daad7d865ace44699c442"
+    },
+    {
+      "conference": "naacl2009",
+      "papers": 146,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N09-1",
+        "N09-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N09.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N09.xml",
+          "sha256": "f9bfe516c327b212324a8ff1bb1ce8d7494c5163ebbc52df12fc0b176ad4584b"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "6d8dcafc32478643e996362dbdf5a2dab5fa467534e12807c5f571727317212d"
+    },
+    {
+      "conference": "naacl2010",
+      "papers": 146,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N10-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N10.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N10.xml",
+          "sha256": "0e63bc32bdf8636ffa544cf72c4b9f125d936cbd60344202179715bb346e1a17"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "98125c408642da817e09fb36fa1d7be728023e1e5c9160d13b5edda095b56f8d"
+    },
+    {
+      "conference": "naacl2012",
+      "papers": 97,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N12-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N12.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N12.xml",
+          "sha256": "261c1ecb619b86819f39a1d19ff684166c831b8d7e5f4187ee38c50924645147"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "a16c80d6ffae1e936a8567e8d9bf73e0ba975b4fd083c38f4b69a31174e5a2e0"
+    },
+    {
+      "conference": "naacl2013",
+      "papers": 140,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N13-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N13.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N13.xml",
+          "sha256": "98ffe4ff590e9020d4a428275603addaf34377ce7fa7209ed357063590e8b2f5"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "99beafc4ee88a90d35a49e3cf7b6c457cfddb75b2267ddc5383808d617d31495"
+    },
+    {
+      "conference": "naacl2015",
+      "papers": 186,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N15-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N15.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N15.xml",
+          "sha256": "d39e6f72a231a50d91406d13a002c5316333d89419d35c5352722715a34a0d40"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "94f1161e8547df28b00dbcca12bbf6b23c072355396bf2ec7f2ad048738ae502"
+    },
+    {
+      "conference": "naacl2016",
+      "papers": 181,
+      "with_abstract": 0,
+      "with_reviews": 0,
+      "volumes": [
+        "N16-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N16.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N16.xml",
+          "sha256": "1742cfb32aaf7de23dd8b379245906665564b5e5f4729f626e566f26a9d49cbc"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "3374c4fe43efd53b70bb95bc534a0416defeb588709111e809862049d45b24a4"
+    },
+    {
+      "conference": "naacl2018",
+      "papers": 330,
+      "with_abstract": 330,
+      "with_reviews": 0,
+      "volumes": [
+        "N18-1",
+        "N18-2"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N18.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N18.xml",
+          "sha256": "17a671df2111feb9dd972cf1dd946ec06973da8d324d9e2915cfc87c4ad2baa2"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "011e2431441c564791e7413a7dc8c987cb112f11655062cc1028ceb2a77f5f5f"
+    },
+    {
+      "conference": "naacl2019",
+      "papers": 423,
+      "with_abstract": 423,
+      "with_reviews": 0,
+      "volumes": [
+        "N19-1"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N19.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/N19.xml",
+          "sha256": "f07a403e06d2fa2c3dbc5951126da3c513046b463bd27347bd12b018508a348f"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "6ec9821f27289d5e94296f35ffc9ec3393a326b0c815d39eabe0b51bfb3857fe"
+    },
+    {
+      "conference": "naacl2021",
+      "papers": 477,
+      "with_abstract": 477,
+      "with_reviews": 0,
+      "volumes": [
+        "2021.naacl-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.naacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2021.naacl.xml",
+          "sha256": "7b11fc7bfcaf643f2bc067093440fd44a30d344ce0a3caf1f07d4b8eb5a000c3"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "6a5a89599664395e9f10aca510eb8c01901855c54b2d47d4c81a9f2aef32749f"
+    },
+    {
+      "conference": "naacl2022",
+      "papers": 442,
+      "with_abstract": 442,
+      "with_reviews": 0,
+      "volumes": [
+        "2022.naacl-main"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.naacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2022.naacl.xml",
+          "sha256": "64f8d2f70926168313a2e2369e94c904074363877a9e3a367a7ebe1fcc92bec8"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "524c1d204ae79b530015028b0b5032376e517cc5ba4fa7fa6f940ef2bfdd9788"
+    },
+    {
+      "conference": "naacl2024",
+      "papers": 562,
+      "with_abstract": 562,
+      "with_reviews": 0,
+      "volumes": [
+        "2024.naacl-long",
+        "2024.naacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.naacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2024.naacl.xml",
+          "sha256": "963ea7c81fd0a9cf46b8059e47d2950dcba717e284fcbc98a813f8a5c01996f1"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "f5fc761ac2fb275d663a2a6cb9ac8f8e159fe8d920e5b78a1023094e108d4260"
+    },
+    {
+      "conference": "naacl2025",
+      "papers": 718,
+      "with_abstract": 695,
+      "with_reviews": 0,
+      "volumes": [
+        "2025.naacl-long",
+        "2025.naacl-short"
+      ],
+      "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.naacl.xml",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/acl-org/acl-anthology/fea0d77e817370d7e09417470426f2a929001b8b/data/xml/2025.naacl.xml",
+          "sha256": "45ace4c6bd1dd4edfa53745898c75ee87c3b7b8202d0e1e207026c2517bad72a"
+        }
+      ],
+      "excluded_front_matter_or_duplicate_ids": [],
+      "data_sha256": "815dc25d9225fa31f9b33cd461d14169bd0b4707e47b085fbb30f6e8dfd551d4"
     }
   ]
 }
